@@ -28,8 +28,8 @@
   
   <!-- Custom Files headBegin end-->
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
@@ -52,10 +52,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #f4f4f4;
@@ -109,7 +105,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -520,7 +516,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -834,233 +830,16 @@ button {
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
-.cover-wrapper #parallax-window {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
-.parallax-mirror {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-mode: 'dark';
-  }
-  :root:not([color-scheme]) {
-    --color-site-body: #121212;
-    --color-read-bkg: #1f1f1f;
-    --color-read-post: #262626;
-    --color-site-bg: #1f1f1f;
-    --color-site-inner: rgba(238,238,238,0.871);
-    --color-site-footer: rgba(170,170,170,0.871);
-    --color-card: #262626;
-    --color-text: rgba(238,238,238,0.871);
-    --color-block: #434343;
-    --color-codeblock: #1f1f1f;
-    --color-inlinecode: #d56d28;
-    --color-h1: rgba(255,255,255,0.871);
-    --color-h2: rgba(255,255,255,0.871);
-    --color-h3: rgba(255,255,255,0.6);
-    --color-h4: rgba(255,255,255,0.6);
-    --color-h5: rgba(255,255,255,0.6);
-    --color-h6: rgba(255,255,255,0.6);
-    --color-p: rgba(217,217,217,0.871);
-    --color-list: rgba(217,217,217,0.871);
-    --color-list-hl: #63e0c4;
-    --color-meta: rgba(191,191,191,0.871);
-    --color-link: rgba(191,191,191,0.871);
-    --color-copyright-bkg: #21252b;
-  }
-  :root:not([color-scheme]) img {
-    filter: brightness(70%) !important;
-  }
-  :root:not([color-scheme]) .blur {
-    background: rgba(31,31,31,0.9) !important;
-  }
-  :root:not([color-scheme]) .white-box.blur {
-    background: rgba(38,38,38,0.9) !important;
-  }
-  :root:not([color-scheme]) .nav-main .u-search-input {
-    background: var(--color-card) !important;
-  }
-  :root:not([color-scheme]) #l_main .article .prev-next>a {
-    background: var(--color-block) !important;
-  }
-  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
-    background: var(--color-site-bg) !important;
-  }
-  :root:not([color-scheme]) .article blockquote {
-    background: var(--color-block) !important;
-  }
-  :root:not([color-scheme]) .article-title a {
-    color: var(--color-h1) !important;
-  }
-  :root:not([color-scheme]) details>summary {
-    color: var(--color-p) !important;
-    background: var(--color-site-bg) !important;
-  }
-  :root:not([color-scheme]) details {
-    border: 1px solid var(--color-site-bg) !important;
-    background: var(--color-site-bg) !important;
-  }
-  :root:not([color-scheme]) #u-search .modal,
-  :root:not([color-scheme]) #u-search .modal-header,
-  :root:not([color-scheme]) #u-search .modal-body {
-    background: var(--color-card) !important;
-  }
-  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
-    background: var(--color-block) !important;
-  }
-  :root:not([color-scheme]) .u-search-input:hover {
-    background: var(--color-block) !important;
-  }
-  :root:not([color-scheme]) .u-search-input:focus {
-    background: var(--color-site-body) !important;
-  }
-}
-[color-scheme='dark'] {
-  --color-site-body: #121212;
-  --color-read-bkg: #1f1f1f;
-  --color-read-post: #262626;
-  --color-site-bg: #1f1f1f;
-  --color-site-inner: rgba(238,238,238,0.871);
-  --color-site-footer: rgba(170,170,170,0.871);
-  --color-card: #262626;
-  --color-text: rgba(238,238,238,0.871);
-  --color-block: #434343;
-  --color-codeblock: #1f1f1f;
-  --color-inlinecode: #d56d28;
-  --color-h1: rgba(255,255,255,0.871);
-  --color-h2: rgba(255,255,255,0.871);
-  --color-h3: rgba(255,255,255,0.6);
-  --color-h4: rgba(255,255,255,0.6);
-  --color-h5: rgba(255,255,255,0.6);
-  --color-h6: rgba(255,255,255,0.6);
-  --color-p: rgba(217,217,217,0.871);
-  --color-list: rgba(217,217,217,0.871);
-  --color-list-hl: #63e0c4;
-  --color-meta: rgba(191,191,191,0.871);
-  --color-link: rgba(191,191,191,0.871);
-  --color-copyright-bkg: #21252b;
-}
-[color-scheme='dark'] img {
-  filter: brightness(70%) !important;
-}
-[color-scheme='dark'] .blur {
-  background: rgba(31,31,31,0.9) !important;
-}
-[color-scheme='dark'] .white-box.blur {
-  background: rgba(38,38,38,0.9) !important;
-}
-[color-scheme='dark'] .nav-main .u-search-input {
-  background: var(--color-card) !important;
-}
-[color-scheme='dark'] #l_main .article .prev-next>a {
-  background: var(--color-block) !important;
-}
-[color-scheme='dark'] #l_main .article .prev-next>a:hover {
-  background: var(--color-site-bg) !important;
-}
-[color-scheme='dark'] .article blockquote {
-  background: var(--color-block) !important;
-}
-[color-scheme='dark'] .article-title a {
-  color: var(--color-h1) !important;
-}
-[color-scheme='dark'] details>summary {
-  color: var(--color-p) !important;
-  background: var(--color-site-bg) !important;
-}
-[color-scheme='dark'] details {
-  border: 1px solid var(--color-site-bg) !important;
-  background: var(--color-site-bg) !important;
-}
-[color-scheme='dark'] #u-search .modal,
-[color-scheme='dark'] #u-search .modal-header,
-[color-scheme='dark'] #u-search .modal-body {
-  background: var(--color-card) !important;
-}
-[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
-  background: var(--color-block) !important;
-}
-[color-scheme='dark'] .u-search-input:hover {
-  background: var(--color-block) !important;
-}
-[color-scheme='dark'] .u-search-input:focus {
-  background: var(--color-site-body) !important;
-}
-@media screen and (max-width: 500px) {
-  [color-scheme='dark'] .l_header .m_search {
-    background: var(--color-site-bg) !important;
-  }
-}
 @font-face {
-  font-family: 'Dosis';
-  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/Dosis/Dosis-Medium.ttf");
+  font-family: 'UbuntuMono';
+  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'Dosis';
-  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/Dosis/Dosis-Medium.ttf");
+  font-family: 'Varela Round';
+  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1183,7 +962,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1194,7 +973,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
@@ -1887,21 +1666,10 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
-@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
-  .l_header .m_search {
-    background: var(--color-site-bg) !important;
-  }
-}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
   <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
-    <script>
-      let userColorScheme=localStorage.getItem("color-scheme")
-      if(userColorScheme){
-        document.documentElement.setAttribute("color-scheme", userColorScheme);
-      }
-    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1968,7 +1736,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = "false"; // 调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
   /******************** volantis.EventListener ********************************/
   // 事件监听器 see: /source/js/app.js
@@ -2372,9 +2140,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <script>
   volantis.GLOBAL_CONFIG ={
     root: '/',
-    debug: false,
+    debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1664896305090),
+    lastupdate: new Date(1664896864746),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2382,7 +2150,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js'
     },
     sidebar: {
-      for_page: ["qgroup","post","category","guide"],
+      for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2396,15 +2164,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       }
     },
     plugins: {
-      message: {"enable":true,"icon":{"default":"fa-light fa-info-circle light-blue","quection":"fa-light fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":false,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"fa-brands fa-creative-commons light-blue"},"aplayer":{"enable":true,"play":"fa-light fa-play light-blue","pause":"fa-light fa-pause light-blue","error":"fa-light fa-exclamation-square red"},"rightmenu":{"enable":true,"notice":true}},
+      message: {"enable":true,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       
-      aplayer: {
-        id: 5062959861,
-        enable:true
-      },
-      
-      
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.prevNext","hr","menus.links","hr","menus.darkMode","hr","plugins.articlePage","hr","music"],"options":{"iconPrefix":"fa-duotone PETERRIVE","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone PETERRIVE fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone PETERRIVE fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone PETERRIVE fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone PETERRIVE fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone PETERRIVE fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-duotone PETERRIVE fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone PETERRIVE fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone PETERRIVE fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-duotone PETERRIVE fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-duotone PETERRIVE fa-images","event":"window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open EMERALD","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-solid fa-rss","link":"https://volantis.js.org/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-solid fa-fan","link":"https://volantis.js.org/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}],"links":[{"id":"help","name":"常见问题","icon":"fa-duotone fa-question EMERALD","link":"/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-duotone fa-rss PETERRIVE","link":"/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-duotone fa-fan fa-spin AMETHYST","link":"/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-duotone fa-code-branch WETASPHALT","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-duotone fa-code-branch CONCRETE","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-duotone fa-angles-left PETERRIVE","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-duotone fa-angles-right PETERRIVE","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
       
     },
     search: {
@@ -2709,7 +2470,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper  dock' style="display: ;">
         
-  <div id="parallax-window"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2718,7 +2479,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <p class="title">SAKE</p>
     
     
-      <p class="subtitle">需要有一个写字的地方</p>
+      <p class="subtitle">要有个写字的地方</p>
     
   </div>
   <div class='bottom'>
@@ -2817,19 +2578,65 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget text desktop moblie pjax">
-  
-  <header>
-    
-      <i class="fa-brands fa-qq fa-fw" aria-hidden="true"></i><span class='name'>加入 QQ 群</span>
-    
-  </header>
-
-
+<section class="widget blogger desktop mobile pjax">
   <div class='content'>
     
-      <p>如果你在使用中遇到问题，请到 <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues">Github Issues</a> 或者 <a href="/faqs/#comments">留言板</a> 进行反馈，你也可以加入 <a target="_blank" rel="noopener" href="https://t.me/volantis_x">Telegram</a> 或者 <strong>QQ 群</strong>，验证码：vlts-2021<br><a target="_blank" rel="noopener" href="https://qm.qq.com/cgi-bin/qm/qr?k=FpexWW5GCLWOM3jF3LG-YWfllXuv7cMs&jump_from=webapi"><img src="https://bu.dusays.com/2021/09/24/ae832f0aadee8.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/09/24/ae832f0aadee8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a></p>
-
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">sake's blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fa-solid fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:1193368126@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/fullstack-sake/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
     
   </div>
 </section>
@@ -2841,13 +2648,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-    
-  
-
-  
-    
-    
-      
 
     
   
@@ -2856,169 +2656,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget grid desktop mobile pjax">
+
+    
   
-  <header>
-    
-      <i class="fa-solid fa-map-signs fa-fw" aria-hidden="true"></i><span class='name'>分类导航</span>
-    
-  </header>
 
-
-  <div class='content'>
-    <div class="grid navigation fixed">
-      
-        <a class="flat-box" href="/faqs/"
-          
-          
-          active-action="action-faqs">
-          
-            <i class="fa-solid fa-question-circle fa-fw" aria-hidden="true"></i>
-          
-          常见问题
-        </a>
-      
-        <a class="flat-box" href="/examples/"
-          
-          
-          active-action="action-examples">
-          
-            <i class="fa-solid fa-play-circle fa-fw" aria-hidden="true"></i>
-          
-          示例博客
-        </a>
-      
-        <a class="flat-box" href="/contributors/"
-          
-          
-          active-action="action-contributors">
-          
-            <i class="fa-solid fa-handshake fa-fw" aria-hidden="true"></i>
-          
-          特别感谢
-        </a>
-      
-        <a class="flat-box" href="/archives/"
-          
-          
-          active-action="action-archives">
-          
-            <i class="fa-solid fa-file-alt fa-fw" aria-hidden="true"></i>
-          
-          测试博文
-        </a>
-      
-        <a class="flat-box" href="https://github.com/volantis-x/hexo-theme-volantis/"
-          
-            rel="external nofollow noopener noreferrer"
-          
-          
-            target="_blank"
-          
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-          
-            <i class="fa-solid fa-file-code fa-fw" aria-hidden="true"></i>
-          
-          主题源码
-        </a>
-      
-        <a class="flat-box" href="https://github.com/volantis-x/hexo-theme-volantis/releases/"
-          
-            rel="external nofollow noopener noreferrer"
-          
-          
-            target="_blank"
-          
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisreleases">
-          
-            <i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>
-          
-          更新日志
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-    
   
 
 
 <div class="widget-sticky pjax">
 
-  
-  
-<section class="widget text desktop mobile ">
-  
-  <header>
-    
-      <a href='/contributors/'><i class="fa-solid fa-plus fa-fw" aria-hidden="true"></i><span class='name'>社区活动</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p><strong>如何让自己的文章收录到这里？</strong><br>官方网站是开源的，只要您的文章与 Hexo 博客搭建相关，就可以自助进行收录，详细的操作步骤请见：「<a href="/contributors/#%E5%8F%91%E5%B8%83%E4%B8%8E%E5%88%86%E4%BA%AB%E6%96%87%E7%AB%A0"><strong>发布与分享文章</strong></a>」。</p>
-
-    
-  </div>
-</section>
-
-  
-
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3084,24 +2734,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="aplayer-container">
           
 
-  
-    
-      <meting-js
-        theme='#1BCDFC'
-        autoplay='false'
-        volume='0.4'
-        loop='all'
-        order='random'
-        fixed='false'
-        list-max-height='320px'
-        server='netease'
-        type='playlist'
-        id='5062959861'
-        list-folded='true'>
-      </meting-js>
-    
-  
-
 
         </div>
       
@@ -3111,89 +2743,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-              <a href="/atom.xml"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/020-rss.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/020-rss.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
           
             
-              <a href="https://github.com/volantis-x/"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/029-github.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/029-github.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
           
-            
-              <a href="https://t.me/volantis_x"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/010-facebook.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/010-facebook.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://t.me/volantis_x"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/018-twitter.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/018-twitter.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://t.me/volantis_x"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/045-telegram.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/045-telegram.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://t.me/volantis_x"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/006-youtube.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/icon/1322024-social-media/006-youtube.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
             
           
         </div>
       
     
       
-        <p>本站使用 <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.0">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
-
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
       
     
       
-        
-          <div><p><span>本站总访问量为 <span id='busuanzi_value_site_pv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span>访客数为 <span id='busuanzi_value_site_uv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
-</div>
-        
+        本站使用
+        <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.0" target="_blank" class="codename">Volantis</a>
+        作为主题
       
     
       
         <div class='copyright'>
-        <p><a target="_blank" rel="noopener" href="https://github.com/volantis-x/">Copyright © Since 2017 Volantis Team</a></p>
+        <p><a href="/">Copyright © since 2017 XXX</a></p>
 
         </div>
       
@@ -3238,530 +2809,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="rightmenu-wrapper">
-  <ul class="list-v rightmenu" id="rightmenu-content">
-    
-  <li class='navigation menuNavigation-Content'>
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left PETERRIVE fa-fw"></i></a>
-
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right PETERRIVE fa-fw"></i></a>
-
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo PETERRIVE fa-fw"></i></a>
-
-
-
-    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-duotone fa-arrow-up PETERRIVE fa-fw"></i></a>
-
-
-  </li>
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-paste fa-fw"></i>
-      粘贴文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-object-ungroup fa-fw"></i>
-      全选文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-cut fa-fw"></i>
-      剪切文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-copy fa-fw"></i>
-      复制文本
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
-      站内搜索
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="bingSearch" data-event="window.open(`https://cn.bing.com/search?q=${__text__}`)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
-      必应搜索
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-external-link-square-alt fa-fw"></i>
-      新标签页打开
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-link fa-fw"></i>
-      复制链接地址
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementImage">
-      <i class="fa-duotone PETERRIVE fa-image fa-fw"></i>
-      复制图片
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="googleImg" data-event="window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)" data-group="elementImage">
-      <i class="fa-duotone PETERRIVE fa-images fa-fw"></i>
-      谷歌识图
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="prev" data-event="volantis.rightmenu.jump('prev')" data-group="prevNext">
-      <i class="fa-duotone fa-angles-left PETERRIVE fa-fw"></i>
-      查看上一篇
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="next" data-event="volantis.rightmenu.jump('next')" data-group="prevNext">
-      <i class="fa-duotone fa-angles-right PETERRIVE fa-fw"></i>
-      查看下一篇
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="help" href="/faqs/" data-group="link">
-      <i class="fa-duotone fa-question EMERALD fa-fw"></i>
-      常见问题
-    </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="examples" href="/examples/" data-group="link">
-      <i class="fa-duotone fa-rss PETERRIVE fa-fw"></i>
-      示例博客
-    </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="contributors" href="/contributors/" data-group="link">
-      <i class="fa-duotone fa-fan fa-spin AMETHYST fa-fw"></i>
-      加入社区
-    </a>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="source_docs" target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs/" data-group="link">
-      <i class="fa-duotone fa-code-branch WETASPHALT fa-fw"></i>
-      本站源码
-    </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="source_theme" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/" data-group="link">
-      <i class="fa-duotone fa-code-branch CONCRETE fa-fw"></i>
-      主题源码
-    </a>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
-      <i class="fa-duotone fa-eclipse-alt WISTERIA fa-fw"></i>
-      暗黑模式
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="printMode" data-event="printMode" data-group="articlePage">
-      <i class="fa-duotone fa-print TURQUOISE fa-fw"></i>
-      打印页面
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
-      <i class="fa-duotone fa-book-open EMERALD fa-fw"></i>
-      阅读模式
-    </span>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-<div id="menuMusic">
-  <li class='music name menuOption-Content'>
-    <p class='nav music-title fix-cursor-default'></p>
-  </li>
-  <li class='music ctrl'>
-    <a class='nav icon-only backward fix-cursor-default'  title="backward">
-      <i class='fa-duotone PETERRIVE fa-step-backward fa-fw'></i>
-    </a>
-    <a class='nav icon-only toggle fix-cursor-default'  title="toggle">
-      <i class='fa-duotone PETERRIVE fa-play fa-fw'></i>
-    </a>
-    <a class='nav icon-only forward fix-cursor-default'  title="forward">
-      <i class='fa-duotone PETERRIVE fa-step-forward fa-fw'></i>
-    </a>
-  </li>
-  <li class='music volume'>
-    <div class='nav volume'>
-      <div class="aplayer-volume-bar-wrap">
-        <div class="aplayer-volume-bar fix-cursor-pointer">
-          <div class="aplayer-volume"></div>
-          <i class='left fa-duotone PETERRIVE fa-volume-off fa-fw'></i>
-          <i class='right fa-duotone PETERRIVE fa-volume-up fa-fw'></i>
-        </div>
-      </div>
-    </div>
-  </li>
-</div>
-
-  </ul>
-</div>
-<script src="/js/plugins/rightMenus.js"></script>
-<script>
-  const RightMenusFunction = {};
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  //RightMenusFunction['copyPaste'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyAll'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyCut'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyText'] = (fun) => {fun()}
-
-
-
-
-
-  RightMenusFunction['searchWord'] = (__text__) => {OpenSearch(__text__)}
-
-
-
-
-
-  RightMenusFunction['bingSearch'] = (__text__) => {window.open(`https://cn.bing.com/search?q=${__text__}`)}
-
-
-
-
-
-  RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
-
-
-
-
-
-  //RightMenusFunction['copyLink'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['copyImg'] = (fun) => {fun()}
-
-
-
-
-
-  RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)}
-
-
-
-
-
-
-
-  RightMenusFunction['prev'] = () => {volantis.rightmenu.jump('prev')}
-
-
-
-
-
-  RightMenusFunction['next'] = () => {volantis.rightmenu.jump('next')}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  RightMenusFunction['darkMode'] = () => {volantis.dark.toggle()}
-
-
-
-
-
-
-
-  //RightMenusFunction['printMode'] = (fun) => {fun()}
-
-
-
-
-
-  //RightMenusFunction['readMode'] = (fun) => {fun()}
-
-
-
-
-
-
-
-</script>
-
-
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
-
-  <script>
-const rootElement = document.documentElement;
-const darkModeStorageKey = "color-scheme";
-const rootElementDarkModeAttributeName = "color-scheme";
-const setLS = (k, v) => {
-    localStorage.setItem(k, v);
-};
-const removeLS = (k) => {
-    localStorage.removeItem(k);
-};
-const getLS = (k) => {
-    return localStorage.getItem(k);
-};
-const getModeFromCSSMediaQuery = () => {
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-};
-const resetRootDarkModeAttributeAndLS = () => {
-  rootElement.removeAttribute(rootElementDarkModeAttributeName);
-  removeLS(darkModeStorageKey);
-};
-const validColorModeKeys = {
-  dark: true,
-  light: true,
-};
-const applyCustomDarkModeSettings = (mode) => {
-  const currentSetting = mode || getLS(darkModeStorageKey);
-  getCustomDarkMode();
-  if (currentSetting === getModeFromCSSMediaQuery()) {
-    resetRootDarkModeAttributeAndLS();
-  } else if (validColorModeKeys[currentSetting]) {
-    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
-  } else {
-    resetRootDarkModeAttributeAndLS();
-  }
-};
-const invertDarkModeObj = {
-  dark: "light",
-  light: "dark",
-};
-/**
- * get target mode
- */
- const getCustomDarkMode = () => {
-  let currentSetting = getLS(darkModeStorageKey);
-  if (validColorModeKeys[currentSetting]) {
-    currentSetting = invertDarkModeObj[currentSetting];
-  } else if (currentSetting === null) {
-    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
-  } else {
-    return;
-  }
-  if(currentSetting=="dark"){
-    volantis.dark.mode="light";
-  }else{
-    volantis.dark.mode="dark";
-  }
-  // console.log(volantis.dark.mode)
-};
-const toggleCustomDarkMode = () => {
-  let currentSetting = getLS(darkModeStorageKey);
-  if (validColorModeKeys[currentSetting]) {
-    currentSetting = invertDarkModeObj[currentSetting];
-  } else if (currentSetting === null) {
-    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
-  } else {
-    return;
-  }
-  setLS(darkModeStorageKey, currentSetting);
-  return currentSetting;
-};
-/**
- * 暗黑模式触发器
- */
-volantis.dark.toggle=()=>{
-  const mode = toggleCustomDarkMode();
-  applyCustomDarkModeSettings(mode);
-  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
-  volantis.dark.method.toggle.start();
-}
-/**
- * bind event for toggle button
- */
-
-function bindToggleButton() {
-  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
-  btn.forEach(function (e) {
-    volantis.dom.$(e).on('click',volantis.dark.toggle);
-  })
-}
-applyCustomDarkModeSettings();
-document.addEventListener("DOMContentLoaded", ()=>{
-  volantis.requestAnimationFrame(bindToggleButton)
-});
-volantis.pjax.push(bindToggleButton);
-
-const darkModelListeners={
-  dark:(mediaQueryList )=>{
-    if(mediaQueryList.matches){
-      volantis.dark.mode = "dark";
-    }
-    volantis.dark.method.toggle.start();
-  },
-  light:(mediaQueryList)=>{
-    if(mediaQueryList.matches){
-      volantis.dark.mode = "light";
-    }
-    volantis.dark.method.toggle.start();
-  }
-}
-window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
-window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
-</script>
-
 
 
 
@@ -3841,112 +2890,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-   <script type="text/javascript">
-  function pjax_scrollrebeal() {
-    ScrollReveal().reveal("#l_main .reveal", {
-      distance: "32px",
-      duration: "800",
-      interval: "20",
-      scale: "1",
-      easing: "ease-out",
-    });
-  }
-  function init_scrollrebeal() {
-    if (typeof ScrollReveal == "undefined") {
-      volantis.requestAnimationFrame(init_scrollrebeal);
-    } else {
-      pjax_scrollrebeal();
-    }
-  }
-  volantis.js("https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js");
-  document.addEventListener("DOMContentLoaded", init_scrollrebeal)
-  volantis.pjax.push(
-    pjax_scrollrebeal,
-    "pjax_scrollrebeal",
-    (setRequestAnimationFrame = false)
-  );
-</script>
-
-
-
-
-  <script>
-  volantis.css("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css");
-
-  
-    (async () => {
-      // APlayer 需要在  MetingJS 之前加载
-      await volantis.js("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js")
-      await volantis.js("https://unpkg.com/meting@2/dist/Meting.min.js")
-    
-      // 右键 music 需要在 APlayer  MetingJS 之后加载
-      await volantis.js('/js/plugins/aplayer.js')
-    
-    })();
-
-    function SetAPlayerPlugin(){
-      let Metings = document.querySelectorAll('meting-js');
-      if (Metings.length === 0) {return;};
-      if (Metings[0].aplayer && Metings[0].aplayer.on) {
-        // improve the accessibility https://web.dev/button-name/
-        document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
-          e.setAttribute("aria-label","Aplayer Menu")
-        })
-        // message see: /layout/_plugins/message/script.ejs
-        
-          try {
-            setTimeout(() => {
-              Metings.forEach((item, index) => {
-                const aplayerItem = item.aplayer; if(!aplayerItem) return;
-                const rightAplayerCheck = 'true' === 'true'
-                  && item.meta.id === '5062959861';
-                if(rightAplayerCheck) RightMenuAplayer.checkAPlayer();
-                if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
-                  aplayerItem.on('play', function messagePlay() {
-                    let index = aplayerItem.list.index;
-                    let title = aplayerItem.list.audios[index].title;
-                    let artist = aplayerItem.list.audios[index].artist;
-                    setTimeout(() => {
-                      VolantisApp.message('音乐通知', title + ' - ' + artist, {
-                        icon: 'fa-light fa-play light-blue',
-                        transitionIn: 'flipInX',
-                        transitionOut: 'flipOutX'
-                      });
-                    }, 100)
-                  });
-                }
-                if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
-                  aplayerItem.on('pause', function messagePause() {
-                    let index = aplayerItem.list.index;
-                    let title = aplayerItem.list.audios[index].title;
-                    let artist = aplayerItem.list.audios[index].artist;
-                    setTimeout(() => {
-                      // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
-                      if(aplayerItem.paused) {
-                        VolantisApp.message('音乐通知', title + ' - ' + artist, {
-                          icon: 'fa-light fa-pause light-blue',
-                          transitionIn: 'flipInX',
-                          transitionOut: 'flipOutX'
-                        });
-                      }
-                    }, 100)
-                  });
-                }
-              });
-            }, 500)
-          } catch (error) { console.error(error); }
-        
-      }else{
-        volantis.requestAnimationFrame(SetAPlayerPlugin)
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", ()=>{
-      SetAPlayerPlugin();
-    });
-    volantis.pjax.push(SetAPlayerPlugin);
-  
-</script>
 
 
 
@@ -3969,7 +2912,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"volantis-x/community","repo-id":"MDEwOlJlcG9zaXRvcnkyNDIzNjY1ODM=","mapping":"number","term":"145","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN","input-position":"top"},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
@@ -4003,8 +2946,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-
-  <script defer src="https://cdn.dusays.com/bsz.js" data-pjax></script>
 
 
 <!-- optional -->
@@ -4084,61 +3025,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-
-
-  <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp"];
-  let index = 0;
-  let IntervalParallax = null;
-
-  function parallax(){
-    let ParallaxWindow = document.querySelector("#parallax-window");
-    
-    Parallax.window = ParallaxWindow;
-    Parallax.options.fade = 1500;
-    Parallax.cache = 1;
-    next_parallax();
-    Parallax.init();
-    if (imgs.length>1) {
-      IntervalParallax = setInterval(function () {
-        next_parallax();
-      }, '10000');
-    }
-  }
-
-  function next_parallax() {
-    if (typeof Parallax == "undefined") {
-      return
-    }
-    
-      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
-        return
-      }
-    
-    if (imgs.length>=1) {
-      Parallax.options.src = imgs[index % imgs.length];
-      Parallax.start();
-      index++;
-      if (Parallax.cache) {
-        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
-        if (index == imgs.length) {
-          Parallax.cache = 0;
-        }
-      }
-    }
-  }
-  var runningOnBrowser = typeof window !== "undefined";
-  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-  if (!isBot) {
-    volantis.js('/js/plugins/parallax.js').then(()=>{
-      parallax()
-    })
-    volantis.pjax.send(()=>{
-      clearInterval(IntervalParallax)
-    },"clearIntervalParallax");
-    volantis.pjax.push(parallax);
-  }
-</script>
 
 
 
@@ -4319,96 +3205,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-
-
-  <script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 

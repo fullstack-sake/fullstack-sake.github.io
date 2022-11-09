@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.0'>
-  <link rel="stylesheet" href="https://unpkg.com/katex@0.16.0/dist/katex.css" integrity="sha384-1IGr2Yb8xuHjwTG+WoGjj2+I/a/N6z0gDD5YIGCQxywPROOKc3+orbn/R7arWQxD" crossorigin="anonymous">
-  <script src="https://unpkg.com/katex@0.16.0/dist/katex.js" integrity="sha384-I2b1Pcl48X93GxEkGkaMo1hrd6n+IX8H2wgSsMimGbkZoGTve/87h1FjaDNvlpQi" crossorigin="anonymous"></script>
   <meta name="generator" content="Hexo 6.3.0">
   <meta name="Volantis" content="6.0.0-alpha.0">
   <meta charset="utf-8">
@@ -27,7 +25,9 @@
   <!-- import head_begin begin -->
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
-  
+  <script src="/custom/darkmode.js"></script>
+<link rel="stylesheet" href="/custom/darkmode.css" type="text/css"/>
+
   <!-- Custom Files headBegin end-->
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -47,7 +47,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-10-05T04:28:37.000Z">
-<meta property="article:modified_time" content="2022-10-15T08:09:29.376Z">
+<meta property="article:modified_time" content="2022-11-08T03:28:47.777Z">
 <meta property="article:author" content="sake">
 <meta property="article:tag" content="AI">
 <meta name="twitter:card" content="summary">
@@ -800,6 +800,158 @@ button {
     opacity: 1;
     -webkit-opacity: 1;
     -moz-opacity: 1;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
+    --color-inlinecode: #d56d28;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
+    --color-list-hl: #63e0c4;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
+    --color-copyright-bkg: #21252b;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(31,31,31,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(38,38,38,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
+  --color-inlinecode: #d56d28;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
+  --color-list-hl: #63e0c4;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
+  --color-copyright-bkg: #21252b;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(31,31,31,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(38,38,38,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
   }
 }
 @font-face {
@@ -1638,10 +1790,21 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
   <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <script>
+      let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -2114,7 +2277,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1666360035364),
+    lastupdate: new Date(1667985149506),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2164,14 +2327,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files headEnd begin-->
   
   <!-- Custom Files headEnd end-->
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://unpkg.com/katex@0.16.3/dist/katex.css">
+
+<link rel="stylesheet" href="https://unpkg.com/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <!-- import body_begin begin-->
     <!-- import body_begin end-->
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2565,10 +2733,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-10-15T16:09:29+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-08T11:28:47+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年10月15日</p>
+    <p>更新于：2022年11月8日</p>
   </a>
 </div>
 
@@ -2576,6 +2744,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：5.4k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：21 分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -2602,6 +2783,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
 
 
           
@@ -2689,7 +2884,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>在我们看来，这些输入数据在某种程度上好像有相似的地方，比如 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> 随 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">x</span></span></span></span> 的增大呈现出一种<strong>线性递增</strong>📈或者<strong>线性递减</strong>📉的趋势。那我们想定量的去衡量这种线性的递增递减关系，就会想到能不能找到一个线性函数来尽可能的接近这些数据，用这个线性函数来预测或者是描述之后的输入数据。</p>
 <blockquote>
 <p>✨你也可以通过笔者写的这样一段代码生成上面的图像：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt </span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np </span><br><span class="line"></span><br><span class="line">n = <span class="number">50</span>  <span class="comment"># 数据个数</span></span><br><span class="line">x = np.linspace(<span class="number">1</span>, n, n).reshape(-<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">y = np.random.choice([-<span class="number">2</span>,-<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>]) * x </span><br><span class="line">y += np.random.randn(n, <span class="number">1</span>) * <span class="number">10</span></span><br><span class="line">plt.figure() </span><br><span class="line">plt.scatter(x,y) </span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt 
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np 
+
+n <span class="token operator">=</span> <span class="token number">50</span>  <span class="token comment"># 数据个数</span>
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>choice<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">*</span> x 
+y <span class="token operator">+=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randn<span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">10</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> 
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </blockquote>
 <h3 id="142模型函数"><a class="markdownIt-Anchor" href="#142模型函数"></a> [1.4.2]模型函数</h3>
 <p>我们将要用来描述这个回归问题的标记🔖如下:</p>
@@ -2721,7 +2925,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><img src="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/image-20221014205854201.png" class="lazyload" data-srcset="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/image-20221014205854201.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221014205854201" /></p>
 <p>我们用draw.io绘制一张<strong>等高线图</strong>，则可以看出在三维空间中存在一个使得 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">J(w, b)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">b</span><span class="mclose">)</span></span></span></span> <strong>最小</strong>的点：</p>
 <p><img src="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/%E7%AD%89%E9%AB%98%E7%BA%BF.drawio.png" class="lazyload" data-srcset="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/%E7%AD%89%E9%AB%98%E7%BA%BF.drawio.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="等高线.drawio" /></p>
-<p>当然，我们也不希望编个程序把这些点画出来，然后人工的方法来读出这些点的数值，这很明显不是一个好办法~~<strong>😵（也太不智能了）</strong>~~。我们会遇到更复杂、更高维度、更多参数的情况，而这些情况是很难画出图的，因此更无法将其可视化。我们真正需要的是一种有效的算法，能够自动地找出这些使代价函数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi></mrow><annotation encoding="application/x-tex">J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span></span></span></span> 取最小值的参数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span> 。</p>
+<p>当然，我们也不希望编个程序把这些点画出来，然后人工的方法来读出这些点的数值，这很明显不是一个好办法 <s><strong>😵（也太不智能了）</strong></s>。我们会遇到更复杂、更高维度、更多参数的情况，而这些情况是很难画出图的，因此更无法将其可视化。我们真正需要的是一种有效的算法，能够自动地找出这些使代价函数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi></mrow><annotation encoding="application/x-tex">J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span></span></span></span> 取最小值的参数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">b</span></span></span></span> 。</p>
 <h3 id="143梯度下降法gradient-descent"><a class="markdownIt-Anchor" href="#143梯度下降法gradient-descent"></a> [1.4.3]梯度下降法（Gradient descent）</h3>
 <blockquote>
 <p>你可能需要一些高等数学📚的知识（<strong>梯度</strong>相关概念）</p>
@@ -2764,13 +2968,134 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="144线性回归的梯度下降算法的代码实现gradient-descent-for-linear-regression"><a class="markdownIt-Anchor" href="#144线性回归的梯度下降算法的代码实现gradient-descent-for-linear-regression"></a> [1.4.4]线性回归的梯度下降算法的代码实现(Gradient Descent For Linear Regression)</h3>
 <p>到现在，我们已经学过了单变量线性回归的<strong>模型函数</strong>、<strong>代价函数</strong>和<strong>梯度下降法</strong>，我们可以尝试用<strong>Python</strong>🐍简单实现一个完整的<strong>单变量线性回归</strong>：</p>
 <p><strong>（🥰希望你通过以下这段代码，也能自己实现一个单变量线性回归）</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成数据</span></span><br><span class="line">n = <span class="number">20</span>  <span class="comment"># 数据个数</span></span><br><span class="line">x = np.linspace(<span class="number">1</span>, n, n).reshape(-<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">y = np.random.randint(-<span class="number">5</span>, <span class="number">5</span>, size=<span class="number">1</span>) * x + np.random.randint(-<span class="number">5</span>, <span class="number">5</span>, size=<span class="number">1</span>)</span><br><span class="line">y += np.random.randn(n, <span class="number">1</span>) * <span class="number">2</span></span><br><span class="line">alpha = <span class="number">0.01</span>  <span class="comment"># 学习率</span></span><br><span class="line">w = <span class="number">0</span></span><br><span class="line">b = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 均方误差函数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cost_func</span>(<span class="params">x, y, w, b</span>):</span><br><span class="line">    cost = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        fwb = w * x[i] + b</span><br><span class="line">        cost += (fwb - y[i]) ** <span class="number">2</span></span><br><span class="line">    cost = <span class="number">0.5</span> * cost / n</span><br><span class="line">    <span class="keyword">return</span> cost</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 梯度计算</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">gradient</span>(<span class="params">x, y, w, b</span>):</span><br><span class="line">    dw = <span class="number">0</span></span><br><span class="line">    db = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        fwb = w * x[i] + b</span><br><span class="line">        dy = fwb - y[i]</span><br><span class="line">        db += dy</span><br><span class="line">        dw += dy * x[i]</span><br><span class="line">    dw = dw / n</span><br><span class="line">    db = db / n</span><br><span class="line">    <span class="keyword">return</span> dw, db</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 梯度下降法</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">gra_descent</span>(<span class="params">x, y, w, b, alpha</span>):</span><br><span class="line">    dw, db = gradient(x, y, w, b)</span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    lossList = []</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        dw, db = gradient(x, y, w, b)</span><br><span class="line">        w -= alpha * dw</span><br><span class="line">        b -= alpha * db</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">abs</span>(dw) &lt; <span class="number">1e-5</span>) <span class="keyword">and</span> (<span class="built_in">abs</span>(db) &lt; <span class="number">1e-5</span>):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">if</span> i &lt; <span class="number">10000</span>:</span><br><span class="line">            lossList.append(cost_func(x, y, w, b))</span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;(the total number of iterations is <span class="subst">&#123;i&#125;</span> times)&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span> w, b, i, lossList</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots(<span class="number">1</span>, <span class="number">2</span>, constrained_layout=<span class="literal">True</span>, figsize=(<span class="number">12</span>, <span class="number">4</span>))</span><br><span class="line"><span class="comment"># 线性回归图</span></span><br><span class="line">x1 = np.arange(<span class="number">0</span>, n + <span class="number">1</span>, n / <span class="number">5</span>)</span><br><span class="line">w1, b1, i, lossList = gra_descent(x, y, w, b, alpha)</span><br><span class="line">fwb1 = w1 * x1 + b1</span><br><span class="line">ax[<span class="number">0</span>].scatter(x, y)</span><br><span class="line">ax[<span class="number">0</span>].set_title(<span class="string">&#x27;Gradient Descent For Linear Regression&#x27;</span>)</span><br><span class="line">ax[<span class="number">0</span>].plot(x1, fwb1, label=<span class="string">f&quot;y = <span class="subst">&#123;<span class="string">&#x27;%.3f&#x27;</span> % w1&#125;</span>x+<span class="subst">&#123;<span class="string">&#x27;%.3f&#x27;</span> % b1&#125;</span> &quot;</span>, c=<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">ax[<span class="number">0</span>].legend()</span><br><span class="line"><span class="comment"># 学习曲线</span></span><br><span class="line">x2 = np.arange(<span class="number">150</span>)</span><br><span class="line">ax[<span class="number">1</span>].set_title(<span class="string">f&#x27;Loss function curve (the total number of iterations is <span class="subst">&#123;i&#125;</span> times)&#x27;</span>)</span><br><span class="line">ax[<span class="number">1</span>].plot(x2, lossList[:<span class="number">150</span>], c=<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# 生成数据
+n &#x3D; 20  # 数据个数
+x &#x3D; np.linspace(1, n, n).reshape(-1, 1)
+y &#x3D; np.random.randint(-5, 5, size&#x3D;1) * x + np.random.randint(-5, 5, size&#x3D;1)
+y +&#x3D; np.random.randn(n, 1) * 2
+alpha &#x3D; 0.01  # 学习率
+w &#x3D; 0
+b &#x3D; 0
+
+
+# 均方误差函数
+def cost_func(x, y, w, b):
+    cost &#x3D; 0
+    for i in range(n):
+        fwb &#x3D; w * x[i] + b
+        cost +&#x3D; (fwb - y[i]) ** 2
+    cost &#x3D; 0.5 * cost &#x2F; n
+    return cost
+
+
+# 梯度计算
+def gradient(x, y, w, b):
+    dw &#x3D; 0
+    db &#x3D; 0
+    for i in range(n):
+        fwb &#x3D; w * x[i] + b
+        dy &#x3D; fwb - y[i]
+        db +&#x3D; dy
+        dw +&#x3D; dy * x[i]
+    dw &#x3D; dw &#x2F; n
+    db &#x3D; db &#x2F; n
+    return dw, db
+
+
+# 梯度下降法
+def gra_descent(x, y, w, b, alpha):
+    dw, db &#x3D; gradient(x, y, w, b)
+    i &#x3D; 0
+    lossList &#x3D; []
+    while True:
+        dw, db &#x3D; gradient(x, y, w, b)
+        w -&#x3D; alpha * dw
+        b -&#x3D; alpha * db
+        if (abs(dw) &lt; 1e-5) and (abs(db) &lt; 1e-5):
+            break
+        if i &lt; 10000:
+            lossList.append(cost_func(x, y, w, b))
+            i &#x3D; i + 1
+        else:
+            break
+    print(f&quot;(the total number of iterations is &#123;i&#125; times)&quot;)
+    return w, b, i, lossList
+
+
+fig, ax &#x3D; plt.subplots(1, 2, constrained_layout&#x3D;True, figsize&#x3D;(12, 4))
+# 线性回归图
+x1 &#x3D; np.arange(0, n + 1, n &#x2F; 5)
+w1, b1, i, lossList &#x3D; gra_descent(x, y, w, b, alpha)
+fwb1 &#x3D; w1 * x1 + b1
+ax[0].scatter(x, y)
+ax[0].set_title(&#39;Gradient Descent For Linear Regression&#39;)
+ax[0].plot(x1, fwb1, label&#x3D;f&quot;y &#x3D; &#123;&#39;%.3f&#39; % w1&#125;x+&#123;&#39;%.3f&#39; % b1&#125; &quot;, c&#x3D;&#39;r&#39;)
+ax[0].legend()
+# 学习曲线
+x2 &#x3D; np.arange(150)
+ax[1].set_title(f&#39;Loss function curve (the total number of iterations is &#123;i&#125; times)&#39;)
+ax[1].plot(x2, lossList[:150], c&#x3D;&#39;b&#39;)
+plt.show()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>或许你会得到和以下这张图类似的图像，我们可以清楚的看到，左图直线拟合得很令我们满意，右图损失函数也收敛于0附近。</p>
 <p><img src="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/Figure_1-16658138914391.png" class="lazyload" data-srcset="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/Figure_1-16658138914391.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Figure_1" /></p>
 <p>如果你尝试运行了以上的代码，你就会发现，再增大数据量n就会导致<strong>溢出</strong>😖，运行速度也减慢。这是因为我们没有对数据进行<strong>标准化</strong>和<strong>归一化</strong>处理，当然，这不是我们现在要探究的内容。如果你通过阅读笔者上面的Python代码，自己也实现了一个单变量线性回归，那么🎉🥳祝贺你从<strong>算法底层</strong>理解并实现了单变量线性回归。</p>
 <hr />
 <p>在实际开发过程中，我们或许会直接使用TensorFlow或pytorch直接运行单变量线性回归的模型进行数据的拟合，以下是使用Python的<strong>TensorFlow</strong>库实现单变量线性回归的代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数初始化</span></span><br><span class="line">n = <span class="number">101</span>  <span class="comment"># 数据个数</span></span><br><span class="line">m = <span class="number">0.5</span>  <span class="comment"># 数据离散程度</span></span><br><span class="line">k = np.random.choice([-<span class="number">2</span>, -<span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>])  <span class="comment"># 近似的斜率</span></span><br><span class="line"><span class="comment"># 数据生成</span></span><br><span class="line">x = np.linspace(-<span class="number">1</span>, <span class="number">1</span>, n).reshape(-<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">y = k * x + np.random.randn(n, <span class="number">1</span>) * m + <span class="number">3</span></span><br><span class="line">x = x.astype(np.float32)</span><br><span class="line">y = y.astype(np.float32)</span><br><span class="line"><span class="comment"># 转为tensor</span></span><br><span class="line">X = tf.constant(x)</span><br><span class="line">Y = tf.constant(y)</span><br><span class="line">w = tf.Variable(tf.zeros([<span class="number">1</span>]))</span><br><span class="line">b = tf.Variable(tf.zeros([<span class="number">1</span>]))</span><br><span class="line">variable = [w, b]</span><br><span class="line"><span class="comment"># 优化器</span></span><br><span class="line">optimizer = tf.keras.optimizers.SGD(learning_rate=<span class="number">0.001</span>)  <span class="comment"># 这里使用的是随机梯度下降</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">linear_regression</span>(<span class="params">w, b, X, Y, epoch=<span class="number">500</span></span>):</span><br><span class="line">    lossList = []  <span class="comment"># 损失函数</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(epoch):</span><br><span class="line">        <span class="keyword">with</span> tf.GradientTape() <span class="keyword">as</span> tape:</span><br><span class="line">            Y_hat = w * X + b</span><br><span class="line">            loss = tf.reduce_sum(tf.square(Y_hat - Y))</span><br><span class="line">            lossList.append(loss)</span><br><span class="line">        grad = tape.gradient(loss, variable)</span><br><span class="line">        optimizer.apply_gradients(grads_and_vars=<span class="built_in">zip</span>(grad, variable))</span><br><span class="line">    lossList = [loss.numpy() <span class="keyword">for</span> loss <span class="keyword">in</span> lossList]</span><br><span class="line">    w = w.numpy()</span><br><span class="line">    b = b.numpy()</span><br><span class="line">    <span class="keyword">return</span> lossList, w, b</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">lossList, w, b = linear_regression(w, b, X, Y)</span><br><span class="line">fig, ax = plt.subplots(<span class="number">1</span>, <span class="number">2</span>, constrained_layout=<span class="literal">True</span>, figsize=(<span class="number">12</span>, <span class="number">4</span>))</span><br><span class="line"><span class="comment"># 线性回归图</span></span><br><span class="line">x1 = np.arange(-<span class="number">1</span>, <span class="number">1</span>, <span class="number">0.05</span>)</span><br><span class="line">fwb1 = w * x1 + b</span><br><span class="line">ax[<span class="number">0</span>].scatter(x, y)</span><br><span class="line">ax[<span class="number">0</span>].set_title(<span class="string">&#x27;grd&#x27;</span>)</span><br><span class="line">ax[<span class="number">0</span>].plot(x1, fwb1, label=<span class="string">f&quot;y = <span class="subst">&#123;<span class="string">&#x27;%.3f&#x27;</span> % w&#125;</span>x+<span class="subst">&#123;<span class="string">&#x27;%.3f&#x27;</span> % b&#125;</span> &quot;</span>, c=<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">ax[<span class="number">0</span>].legend()</span><br><span class="line"><span class="comment"># 学习曲线</span></span><br><span class="line">x2 = np.arange(<span class="built_in">len</span>(lossList))</span><br><span class="line">ax[<span class="number">1</span>].set_title(<span class="string">&#x27;loss&#x27;</span>)</span><br><span class="line">ax[<span class="number">1</span>].plot(x2, lossList, c=<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> tensorflow <span class="token keyword">as</span> tf
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token comment"># 参数初始化</span>
+n <span class="token operator">=</span> <span class="token number">101</span>  <span class="token comment"># 数据个数</span>
+m <span class="token operator">=</span> <span class="token number">0.5</span>  <span class="token comment"># 数据离散程度</span>
+k <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>choice<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># 近似的斜率</span>
+<span class="token comment"># 数据生成</span>
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> k <span class="token operator">*</span> x <span class="token operator">+</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randn<span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> m <span class="token operator">+</span> <span class="token number">3</span>
+x <span class="token operator">=</span> x<span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>float32<span class="token punctuation">)</span>
+y <span class="token operator">=</span> y<span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>float32<span class="token punctuation">)</span>
+<span class="token comment"># 转为tensor</span>
+X <span class="token operator">=</span> tf<span class="token punctuation">.</span>constant<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+Y <span class="token operator">=</span> tf<span class="token punctuation">.</span>constant<span class="token punctuation">(</span>y<span class="token punctuation">)</span>
+w <span class="token operator">=</span> tf<span class="token punctuation">.</span>Variable<span class="token punctuation">(</span>tf<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> tf<span class="token punctuation">.</span>Variable<span class="token punctuation">(</span>tf<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+variable <span class="token operator">=</span> <span class="token punctuation">[</span>w<span class="token punctuation">,</span> b<span class="token punctuation">]</span>
+<span class="token comment"># 优化器</span>
+optimizer <span class="token operator">=</span> tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>optimizers<span class="token punctuation">.</span>SGD<span class="token punctuation">(</span>learning_rate<span class="token operator">=</span><span class="token number">0.001</span><span class="token punctuation">)</span>  <span class="token comment"># 这里使用的是随机梯度下降</span>
+
+
+<span class="token keyword">def</span> <span class="token function">linear_regression</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span> b<span class="token punctuation">,</span> X<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> epoch<span class="token operator">=</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    lossList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># 损失函数</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>epoch<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> tf<span class="token punctuation">.</span>GradientTape<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> tape<span class="token punctuation">:</span>
+            Y_hat <span class="token operator">=</span> w <span class="token operator">*</span> X <span class="token operator">+</span> b
+            loss <span class="token operator">=</span> tf<span class="token punctuation">.</span>reduce_sum<span class="token punctuation">(</span>tf<span class="token punctuation">.</span>square<span class="token punctuation">(</span>Y_hat <span class="token operator">-</span> Y<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            lossList<span class="token punctuation">.</span>append<span class="token punctuation">(</span>loss<span class="token punctuation">)</span>
+        grad <span class="token operator">=</span> tape<span class="token punctuation">.</span>gradient<span class="token punctuation">(</span>loss<span class="token punctuation">,</span> variable<span class="token punctuation">)</span>
+        optimizer<span class="token punctuation">.</span>apply_gradients<span class="token punctuation">(</span>grads_and_vars<span class="token operator">=</span><span class="token builtin">zip</span><span class="token punctuation">(</span>grad<span class="token punctuation">,</span> variable<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    lossList <span class="token operator">=</span> <span class="token punctuation">[</span>loss<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> loss <span class="token keyword">in</span> lossList<span class="token punctuation">]</span>
+    w <span class="token operator">=</span> w<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    b <span class="token operator">=</span> b<span class="token punctuation">.</span>numpy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> lossList<span class="token punctuation">,</span> w<span class="token punctuation">,</span> b
+
+
+lossList<span class="token punctuation">,</span> w<span class="token punctuation">,</span> b <span class="token operator">=</span> linear_regression<span class="token punctuation">(</span>w<span class="token punctuation">,</span> b<span class="token punctuation">,</span> X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span>
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> constrained_layout<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 线性回归图</span>
+x1 <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span>
+fwb1 <span class="token operator">=</span> w <span class="token operator">*</span> x1 <span class="token operator">+</span> b
+ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">'grd'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> fwb1<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string-interpolation"><span class="token string">f"y = </span><span class="token interpolation"><span class="token punctuation">&#123;</span><span class="token string">'%.3f'</span> <span class="token operator">%</span> w<span class="token punctuation">&#125;</span></span><span class="token string">x+</span><span class="token interpolation"><span class="token punctuation">&#123;</span><span class="token string">'%.3f'</span> <span class="token operator">%</span> b<span class="token punctuation">&#125;</span></span><span class="token string"> "</span></span><span class="token punctuation">,</span> c<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># 学习曲线</span>
+x2 <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lossList<span class="token punctuation">)</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">'loss'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x2<span class="token punctuation">,</span> lossList<span class="token punctuation">,</span> c<span class="token operator">=</span><span class="token string">'b'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>或许你会得到和以下这张图类似的图像，细心的你可能会发现输入数据量和第一段代码相比增加了很多，这是因为我们在生成数据时进行了<strong>归一化</strong>处理，并且我们使用的梯度下降算法是<strong>随机梯度下降（SGD）</strong>，通过这样一些操作我们可以拟合<strong>更大量的数据</strong>：</p>
 <p><img src="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/Figure_2.png" class="lazyload" data-srcset="../image/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E7%AC%AC%E4%B8%80%E5%91%A8/Figure_2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Figure_2" /></p>
 <blockquote>
@@ -2820,10 +3145,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-10-15T16:09:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-08T11:28:47+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年10月15日</p>
+    <p>更新于：2022年11月8日</p>
   </a>
 </div>
 
@@ -2844,6 +3169,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
 
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
 
 
         
@@ -2912,6 +3251,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <div class="prev-next">
+      
+        <a class='prev' href='/blog/336e6ff3.html'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>星辰工作室-DevOps</p>
+          <p class='content'>占坑还没写完
+
+DevOps（Development和Operations的组合词）是一种重视“软件开发人员（Dev）”和“IT运维技术人员（Ops）”之间沟通合作的文化、运动或惯例。透过自动化...</p>
+        </a>
       
       
         <a class='next' href='/blog/0.html'>
@@ -3057,7 +3403,7 @@ Hello World
         
   
   <footer class="footer clearfix"  itemscope itemtype="http://schema.org/WPFooter">
-    <br><br>
+    <br><br>  
     
       
         <div class="aplayer-container">
@@ -3081,6 +3427,13 @@ Hello World
       
     
       
+        
+          <div><p><span>本站总访问量为 <span id='busuanzi_value_site_pv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span>访客数为 <span id='busuanzi_value_site_uv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+</div>
+        
+      
+    
+      
         <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
@@ -3088,12 +3441,15 @@ Hello World
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        作为主题，总访问量为
+          <span id="busuanzi_value_site_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+          次
+        
       
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © since 2017 sake</a></p>
 
         </div>
       
@@ -3140,6 +3496,122 @@ Hello World
 
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
+</script>
+
 
 
 
@@ -3276,6 +3748,8 @@ Hello World
 
 
 
+  <script defer src="https://cdn.dusays.com/bsz.js" data-pjax></script>
+
 
 <!-- optional -->
 
@@ -3333,19 +3807,45 @@ Hello World
 
 
 
-  <script>
+  
+  
+<script src="https://unpkg.com/prismjs/components/prism-core.min.js"></script>
+
+
+  
+<script src="https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+  
+<script src="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
 
 
-  function pjax_highlightjs_copyCode(){
-    if (!(document.querySelector(".highlight .code pre") ||
-      document.querySelector(".article pre code"))) {
+  
+<link rel="stylesheet" href="https://unpkg.com/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+
+
+  
+<link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css">
+
+
+<script>
+
+  function pjax_prismjs_copyCode(){
+    if (!document.querySelector("pre")) {
       return;
     }
-    VolantisApp.utilCopyCode(".highlight .code pre, .article pre code")
+    let pres = document.querySelectorAll("pre")
+    pres.forEach(pre=>{
+      var wrapper = document.createElement('div');
+      wrapper.classList.add('code-toolbar');
+      pre.parentNode.insertBefore(wrapper, pre);
+      wrapper.appendChild(pre);
+    })
+    VolantisApp.utilCopyCode(".code-toolbar pre")
   }
-  volantis.requestAnimationFrame(pjax_highlightjs_copyCode)
-  volantis.pjax.push(pjax_highlightjs_copyCode)
+  volantis.requestAnimationFrame(pjax_prismjs_copyCode)
+  volantis.pjax.push(pjax_prismjs_copyCode)
 
 </script>
 
@@ -3357,7 +3857,7 @@ Hello World
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3608,7 +4108,7 @@ Hello World
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://fullstack-sake.github.io/categories/Tech/","name":"Tech"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/blog/686dc6ec.html","name":"从零开始的机器学习-第一周"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"从零开始的机器学习-第一周","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/blog/686dc6ec.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/blog/686dc6ec.html","wordCount":0,"datePublished":"2022-10-05T04:28:37.000Z","dateModified":"2022-10-15T08:09:29.376Z","articleSection":"Tech","keywords":"AI","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://fullstack-sake.github.io/categories/Tech/","name":"Tech"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/blog/686dc6ec.html","name":"从零开始的机器学习-第一周"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"从零开始的机器学习-第一周","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/blog/686dc6ec.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/blog/686dc6ec.html","wordCount":0,"datePublished":"2022-10-05T04:28:37.000Z","dateModified":"2022-11-08T03:28:47.777Z","articleSection":"Tech","keywords":"AI","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

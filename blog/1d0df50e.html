@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://fullstack-sake.github.io/about/"/>
+  <link rel="canonical" href="https://fullstack-sake.github.io/blog/1d0df50e.html"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,21 +35,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于 - sake's blog</title>
-  <meta name="keywords" content="fullstack-sake,fullstacksake,sake,blog">
+  <title>PortSwigger靶场-SQLI-Writeup - sake's blog</title>
+  <meta name="keywords" content="Web,SQLI,fullstack-sake,fullstacksake,sake,blog">
   <meta desc name="description" content="fullstack-sake's blog - sake - sake's blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="sake&#39;s blog">
-<meta property="og:url" content="https://fullstack-sake.github.io/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PortSwigger靶场-SQLI-Writeup">
+<meta property="og:url" content="https://fullstack-sake.github.io/blog/1d0df50e.html">
 <meta property="og:site_name" content="sake&#39;s blog">
-<meta property="og:description" content="Hi there 👋 是个还在努力学编程的菜鸡，技术力和代码水平不高，欢迎赐教😍 如果文章内容有帮到你，且愿意赏作者一口饭吃，欢迎打赏（">
+<meta property="og:description" content="本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。  想到之前sql注入一直都只是用sqlmap一把梭，🥬手注完全不会（😭别骂了，再骂人都要傻了），所以想打个burp官方的靶场先，记录一下📝。    WHERE子句中的SQL注入漏洞允许检索隐藏数据 草，做完了还不能再次访问靶场复现的，会被直接重定向到https:&#x2F;&#x2F;portswigger.net&#x2F;，直">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-10-04T17:39:37.372Z">
-<meta property="article:modified_time" content="2022-10-04T17:39:37.372Z">
+<meta property="article:published_time" content="2022-11-09T11:13:49.000Z">
+<meta property="article:modified_time" content="2022-11-10T08:47:13.677Z">
 <meta property="article:author" content="sake">
-<meta property="article:tag" content="fullstack-sake,fullstacksake,sake,blog">
+<meta property="article:tag" content="Web">
+<meta property="article:tag" content="SQLI">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2347,6 +2348,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self" title="comment"></a></li>
         
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self" title="toc"></a></li>
+        
       </ul>
     </div>
 		<div class="nav-main">
@@ -2606,7 +2609,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper docs dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2682,9 +2685,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=' no_sidebar'>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/about/index.html">
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/1d0df50e.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="sake's blog">
   </span>
@@ -2704,19 +2707,218 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        PortSwigger靶场-SQLI-Writeup
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/64351788" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/64351788" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">sake</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-11-09T19:13:49+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年11月9日</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-10T16:47:13+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年11月10日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.3k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：4 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Tech/">Tech</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
       </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Web/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Web</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SQLI/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SQLI</p></a></div>
+  <span hidden itemprop="keywords">Web SQLI</span>
+  
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="hi-there"><a class="markdownIt-Anchor" href="#hi-there"></a> Hi there 👋</h3>
-<p><strong>是个还在努力学编程的菜鸡，技术力和代码水平不高，欢迎赐教</strong>😍</p>
-<p><strong>如果文章内容有帮到你，且愿意赏作者一口饭吃，欢迎打赏（</strong></p>
-<p><img src="https://raw.githubusercontent.com/fullstack-sake/fullstack-sake.github.io/main/donate/wechat-qr.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/fullstack-sake/fullstack-sake.github.io/main/donate/wechat-qr.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+    <blockquote>
+<p><strong>本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。</strong></p>
+</blockquote>
+<p><strong>想到之前sql注入一直都只是用sqlmap一把梭，🥬手注完全不会（😭别骂了，再骂人都要傻了），所以想打个burp官方的靶场先，记录一下📝。</strong></p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109195416814.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109195416814.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109195416814" /></p>
+<hr />
+<h2 id="where子句中的sql注入漏洞允许检索隐藏数据"><a class="markdownIt-Anchor" href="#where子句中的sql注入漏洞允许检索隐藏数据"></a> <strong>WHERE子句中的SQL注入漏洞允许检索隐藏数据</strong></h2>
+<p><strong>草，做完了还不能再次访问靶场复现的，会被直接重定向到<a target="_blank" rel="noopener" href="https://portswigger.net/%EF%BC%8C%E7%9B%B4%E6%8E%A5%E4%B8%A2%E4%B8%AApayload%E5%90%A7">https://portswigger.net/，直接丢个payload吧</a></strong></p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109211420823.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109211420823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109211420823" /></p>
+<p>payload：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token operator">/</span>filter?category<span class="token operator">=</span>Gifts' <span class="token operator">or</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span><span class="token comment">--</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="允许绕过登录的-sql-注入漏洞"><a class="markdownIt-Anchor" href="#允许绕过登录的-sql-注入漏洞"></a> 允许绕过登录的 SQL 注入漏洞</h2>
+<blockquote>
+<p>用户进行用户名和密码验证时，网站需要查询数据库。查询数据库就是执行类似于这样的SQL语句<code>SELECT * FROM admin WHERE Username= 'username' AND Password= 'password'</code>，由于网站后台在进行数据库查询的时候没有对单引号进行过滤，当输入用户名和万能密码<code>' or 1='1</code>（也可以使用上一题的<code>' or 1=1--</code>）时，执行的SQL语句为<code>SELECT * FROM admin WHERE Username= 'username' or 1='1' AND Password= 'password' or 1='1'</code>，我们可以发现这个逻辑运算结果恒为TRUE。SQL语句的查询结果为TRUE，就意味着认证成功，也可以登录到系统中。</p>
+</blockquote>
+<p>点击打开My account，进入登录界面</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109212705321.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109212705321.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109212705321" /></p>
+<p>尝试使用万能密码<code>' or 1='1</code>登录</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109213452475.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109213452475.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109213452475" /></p>
+<p>成功登录到administrator</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109213616285.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221109213616285.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221109213616285" /></p>
+<p>payload：</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">admin<span class="token string">' or 1='</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="union攻击查询返回的列数"><a class="markdownIt-Anchor" href="#union攻击查询返回的列数"></a> UNION攻击查询返回的列数</h2>
+<blockquote>
+<p><strong>执行SQL注入UNION攻击时，有两种有效的方法来确定从原始查询返回多少列。</strong></p>
+<ul>
+<li>
+<p>第一种方法涉及注入一系列ORDER BY子句，并递增指定的列索引，直到发生错误为止。</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token string">' ORDER BY 1-- 
+'</span> <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token number">2</span><span class="token comment">-- </span>
+' <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token number">3</span><span class="token comment">-- </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>这一系列有效负载修改了原始查询，以按照结果集中的不同列对结果进行排序。order by子句中的列可以通过其索引指定，因此您不需要知道任何列的名称。当指定的列索引超过结果集中实际列的数量时，数据库返回一个错误，例如：</p>
+<pre class="line-numbers language-none"><code class="language-none">The ORDER BY position number 3 is out of range of the number of items in the select list.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>应用程序可能在其HTTP响应中实际返回数据库错误，或者它可能返回一个通用错误，或者只是不返回任何结果。如果您可以检测到应用程序响应中的一些差异，您就可以推断出查询返回了多少列。</p>
+<p>例如：假设注入点是原始查询的WHERE子句中带引号的字符串，则可以提交order by 1语句的意思是根据第一个字段排序,比如我的USER表有四个字段：</p>
+<table>
+<thead>
+<tr>
+<th>username</th>
+<th>nickname</th>
+<th>password</th>
+<th>identity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sake</td>
+<td>sake</td>
+<td>f4k3P@Ssw0rd</td>
+<td>admin</td>
+</tr>
+<tr>
+<td>visitor</td>
+<td>visitor</td>
+<td>123456</td>
+<td>visitor</td>
+</tr>
+</tbody>
+</table>
+<p><code>order by 1</code>效果等同于<code>order by username</code>，而如果<code>order by 5</code>就会报错，因为超过了最大列数4。</p>
+</li>
+<li>
+<p>第二种方法涉及提交一系列UNION SELECT有效负载，指定不同数量的空值:</p>
+</li>
+</ul>
+  <pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token string">' UNION SELECT NULL-- 
+'</span> <span class="token keyword">UNION</span> <span class="token keyword">SELECT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token comment">-- </span>
+' <span class="token keyword">UNION</span> <span class="token keyword">SELECT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token comment">-- </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>如果null的数目与列的数目不匹配，则数据库返回一个错误，例如:</p>
+  <pre class="line-numbers language-none"><code class="language-none">All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>使用UNION，INTERSECT或EXCEPT运算符组合的所有查询在其目标列表中必须具有相等数量的表达式。同样，应用程序实际上可能返回此错误消息，或者可能仅返回一般错误或没有结果。当空数与列数匹配时，数据库将在结果集中返回另一行，其中每一列均包含空值。对产生的HTTP响应的影响取决于应用程序的代码。</p>
+<p><strong>需要注意的是：</strong></p>
+<ul>
+<li>使用NULL作为UNION SELECT注入查询返回值的原因是每列中的数据类型必须在原始查询和注入查询之间兼容。由于NULL可以转换为每种常用的数据类型，因此使用NULL可以最大限度地提高在列计数正确时成功的机会。</li>
+<li>用来注释的 <strong>双减号--</strong> 可以注释掉注入点之后的原始查询的其余部分。但在MySQL上，双破折号序列后面必须跟一个空格，或者直接使用 <strong>井号#</strong> 来进行注释。</li>
+</ul>
+</blockquote>
+<p>使用第二种方法，当指定一个和两个空值时报错</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110161852585.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110161852585.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221110161852585" /></p>
+<p>当指定三个空值时没有报错，成功解决Lab</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110161959250.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110161959250.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221110161959250" /></p>
+<p>payload：</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;filter?category&#x3D;Gifts&#39; UNION SELECT NULL,NULL,NULL--<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="union攻击查找包含文本的列"><a class="markdownIt-Anchor" href="#union攻击查找包含文本的列"></a> UNION攻击查找包含文本的列</h2>
+<blockquote>
+<p>任务是让数据库检索并取回字符串<code>'kTe3Gu'</code>，类似于上题，我们使用UNION SELECT提交有效负载，再指定某一字段为<code>'kTe3Gu'</code>。</p>
+</blockquote>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110163329744.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110163329744.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221110163329744" /></p>
+<p>先使用上一题的方法判断列数，这里略去，经判断为列数为3。然后先指定第一个字段为<code>'kTe3Gu'</code>，显示报错</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110164015098.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110164015098.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221110164015098" /></p>
+<p>尝试指定第二个字段为<code>'kTe3Gu'</code>，没有报错，成功解决Lab</p>
+<p><img src="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110164235270.png" class="lazyload" data-srcset="../image/PortSwigger%E9%9D%B6%E5%9C%BA-SQLI-Writeup/image-20221110164235270.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221110164235270" /></p>
+<p>payload：</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;filter?category&#x3D;Pets&#39; UNION SELECT NULL,&#39;kTe3Gu&#39;,NULL--<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
   </div>
   
@@ -2729,6 +2931,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       <!-- 版权声明组件 -->
       
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href="https://fullstack-sake.github.io/blog/1d0df50e.html">https://fullstack-sake.github.io/blog/1d0df50e.html</a></p>
+                
+              
+            </blockquote>
+          </div>
+        
+      
       <!-- 打赏组件 -->
       
     </div>
@@ -2740,6 +2959,101 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-10T16:47:13+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年11月10日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Web/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Web</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SQLI/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SQLI</p></a></div>
+  <span hidden itemprop="keywords">Web SQLI</span>
+  
+
+
+        
+      
+        
+          
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://fullstack-sake.github.io/blog/1d0df50e.html&title=PortSwigger靶场-SQLI-Writeup - sake's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://fullstack-sake.github.io/blog/1d0df50e.html&title=PortSwigger靶场-SQLI-Writeup - sake's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://fullstack-sake.github.io/blog/1d0df50e.html&title=PortSwigger靶场-SQLI-Writeup - sake's blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
     <!-- Custom Files bottomMeta begin -->
     
@@ -2750,6 +3064,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/blog/336e6ff3.html'>
+          <p class='title'>星辰工作室-DevOps<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>占坑还没写完
+
+DevOps（Development和Operations的组合词）是一种重视“软件开发人员（Dev）”和“IT运维技术人员（Ops）”之间沟通合作的文化、运动或惯例。透过自动化...</p>
+        </a>
+      
+    </div>
   
   <!-- 文章推荐 -->
   
@@ -2765,7 +3091,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/about/index.html#comments">
+      <meta itemprop="discussionUrl" content="/blog/1d0df50e.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2783,8 +3109,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
+  
+    
+    
+      
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#where%E5%AD%90%E5%8F%A5%E4%B8%AD%E7%9A%84sql%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%85%81%E8%AE%B8%E6%A3%80%E7%B4%A2%E9%9A%90%E8%97%8F%E6%95%B0%E6%8D%AE"><span class="toc-text"> WHERE子句中的SQL注入漏洞允许检索隐藏数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%81%E8%AE%B8%E7%BB%95%E8%BF%87%E7%99%BB%E5%BD%95%E7%9A%84-sql-%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E"><span class="toc-text"> 允许绕过登录的 SQL 注入漏洞</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#union%E6%94%BB%E5%87%BB%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E7%9A%84%E5%88%97%E6%95%B0"><span class="toc-text"> UNION攻击查询返回的列数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#union%E6%94%BB%E5%87%BB%E6%9F%A5%E6%89%BE%E5%8C%85%E5%90%AB%E6%96%87%E6%9C%AC%E7%9A%84%E5%88%97"><span class="toc-text"> UNION攻击查找包含文本的列</span></a></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
@@ -2832,7 +3185,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3563,7 +3916,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/about/index.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/about/index.html","wordCount":0,"datePublished":"2022-10-04T17:39:37.372Z","dateModified":"2022-10-04T17:39:37.372Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://fullstack-sake.github.io/categories/Tech/","name":"Tech"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/blog/1d0df50e.html","name":"PortSwigger靶场-SQLI-Writeup"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"PortSwigger靶场-SQLI-Writeup","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/blog/1d0df50e.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/blog/1d0df50e.html","wordCount":0,"datePublished":"2022-11-09T11:13:49.000Z","dateModified":"2022-11-10T08:47:13.677Z","articleSection":"Tech","keywords":"Web,SQLI","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

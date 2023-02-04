@@ -2275,7 +2275,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669551017226),
+    lastupdate: new Date(1675501272944),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2713,9 +2713,695 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/d9b0ba88.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/d9b0ba88.html"  itemprop="url">
+        PortSwigger-Access control-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+
+
+访问控制（或授权）是对谁（或什么）可以执行尝试的操作或访问他们请求的资源的约束的应用。在web应用程序的上下文中，访问控制取决于身份验证和会话管理：
+
+
+身份验证可识别用户并确认他们是他们所说的人。
+
+
+会话管理标识同一用户正在发出哪些后续HTTP请求。
+
+
+访问控制确定是否允许用户执行他们试图...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-21T23:18:00+08:00">2023-01-21</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/d9b0ba88.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/ac23f3c6.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/ac23f3c6.html"  itemprop="url">
+        PortSwigger-SSTI-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+
+
+服务端模板注入是指攻击者能够利用模板自身语法将恶意负载注入模板，然后在服务端执行。
+模板引擎被设计成通过结合固定模板和可变数据来生成网页。当用户输入直接拼接到模板中，而不是作为数据传入时，可能会发生服务端模板注入攻击。这使得攻击者能够注入任意模板指令来操纵模板引擎，从而能够完全控制服务器。顾名思...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-21T17:26:21+08:00">2023-01-21</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/ac23f3c6.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/a2333c3d.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/a2333c3d.html"  itemprop="url">
+        PortSwigger-Authentication-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+
+
+身份验证是验证给定用户或客户端身份的过程。换言之，这涉及到确保他们真的是他们声称的那个人。至少在一定程度上，网站暴露给任何通过设计连接到互联网的人。因此，健壮的身份验证机制是有效web安全的一个重要方面。
+有三种认证因素，可将不同类型的认证分类为：
+
+您知道的一些信息，例如密码或安全问题的答案。...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-16T14:51:02+08:00">2023-01-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/a2333c3d.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/3027f09e.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/3027f09e.html"  itemprop="url">
+        PortSwigger-CORS-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+
+
+跨源资源共享（CORS，或通俗地译为跨域资源共享）是一种基于 HTTP 头的机制，该机制通过允许服务器标示除了它自己以外的其它源（域、协议或端口），使得浏览器允许这些源访问加载自己的资源。跨源资源共享还通过一种机制来检查服务器是否会允许要发送的真实请求，该机制通过浏览器发起一个到服务器托管的跨源...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-14T20:51:47+08:00">2023-01-14</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/3027f09e.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/9d23ab18.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/9d23ab18.html"  itemprop="url">
+        PortSwigger-OS command injection-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+
+
+OS命令注入（也称为shell注入）是一种web安全漏洞，允许攻击者在运行应用程序的服务器上执行任意操作系统（OS）命令，通常会完全破坏应用程序及其所有数据。通常，攻击者可以利用OS命令注入漏洞来危害托管基础设施的其他部分，利用信任关系将攻击转移到组织内的其他系统。
+
+ 简单案例1
+
+目标是获得...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-07T21:58:13+08:00">2023-01-07</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/9d23ab18.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/0.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/0.html"  itemprop="url">
+        2023年1月6日
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+
+hgame{fUnnyJavascript&amp;FunnyM0taG4me}
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-06T21:28:20+08:00">2023-01-06</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/0.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/b7aad371.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/b7aad371.html"  itemprop="url">
+        PortSwigger-Directory traversal-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+本文涉及Lab过于简单，篇幅较短
+
+
+目录遍历（也称为文件路径遍历）是一种网络安全漏洞，允许攻击者读取运行应用程序的服务器上的任意文件。  这可能包括应用程序代码和数据、后端系统的凭据以及敏感的操作系统文件。在某些情况下，攻击者可能能够写入服务器上的任意文件，从而允许他们修改应用程序数据或行为，并最...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-06T20:26:37+08:00">2023-01-06</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/b7aad371.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/487ba050.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/487ba050.html"  itemprop="url">
+        《Signals-and-Systems》知识点
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+         🍮[第一章]-信号与系统概述
+
+ [1.1]信号的基本分类
+
+
+
+#
+信号类型1
+信号类型2
+备注
+
+
+
+
+1
+连续时间信号
+离散时间信号
+只看时间自变量离散还是连续的，其信号幅值可以是连续的也可以是离散的。
+
+
+2
+周期信号
+非周期信号
+f(t)=f(t+nT),n=0,1,2,3,…f(t)=f(t+nT),n=0,1,2,3,\dotsf(t)=f(t+nT),n=0,1,2,3,...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-12-22T14:22:00+08:00">2022-12-22</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/487ba050.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/e4726dcd.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/e4726dcd.html"  itemprop="url">
+        DN42初探
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        施工中，未完成
+
+
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-11-28T10:34:49+08:00">2022-11-28</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/e4726dcd.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2739,7 +3425,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/blog/38f57376.html"  itemprop="url">
-        PortSwigger靶场-XSS-Writeup
+        PortSwigger-XSS-Writeup
       </a>
     </h2>
   
@@ -2795,385 +3481,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/827e7747.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="sake's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="sake's blog">
-    <meta itemprop="description" content="fullstack-sake's blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/827e7747.html"  itemprop="url">
-        攻防世界Web-难度1-Writeup
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        之前就把攻防世界Web难度1刷完了✅，今天打开发现难度1加了几题，补个WP水水💦博客
- file_include
-打开题目发现是个文件包含的题目，使用php://filter读文件发现存在过滤，通过控制变量得出过滤了base64，read这样的关键词
-
-这里考虑使用convert.iconv.*转换过滤器，用法是
-convert.iconv.&lt;input-encoding>.&lt;...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
-            <meta itemprop="name" content="sake">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-12T00:10:03+08:00">2022-11-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Tech/">Tech</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/827e7747.html' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/1d0df50e.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="sake's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="sake's blog">
-    <meta itemprop="description" content="fullstack-sake's blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/1d0df50e.html"  itemprop="url">
-        PortSwigger靶场-SQLI-Writeup
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
-
-想到之前sql注入一直都只是用sqlmap一把梭，🥬🐶手注完全不会（😭别骂了，再骂人都要傻了），所以想打个burp官方的靶场先😋，记录一下📝。
-（多图，注意流量，有些图片可能加载不成功）
-
-
-SQL 注入 (SQLi) 是一种网络安全漏洞，允许攻击者干扰应用程序对其数据库的查询。它通常允许...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
-            <meta itemprop="name" content="sake">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-09T19:13:49+08:00">2022-11-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Tech/">Tech</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/1d0df50e.html' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/336e6ff3.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="sake's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="sake's blog">
-    <meta itemprop="description" content="fullstack-sake's blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/336e6ff3.html"  itemprop="url">
-        星辰工作室-DevOps
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        占坑还没写完
-
-DevOps（Development和Operations的组合词）是一种重视“软件开发人员（Dev）”和“IT运维技术人员（Ops）”之间沟通合作的文化、运动或惯例。透过自动化“软件交付”和“架构变更”的流程，来使得构建、测试、发布软件能够更加地快捷、频繁和可靠。
-
-咕咕了一个月，先更个星辰✨工作室的招新题
- 命令行(CLI)入门
-
-在Unix的世界，命令行是基础，几乎所有...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
-            <meta itemprop="name" content="sake">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-07T21:44:32+08:00">2022-11-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Tech/">Tech</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/336e6ff3.html' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/686dc6ec.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="sake's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="sake's blog">
-    <meta itemprop="description" content="fullstack-sake's blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/686dc6ec.html"  itemprop="url">
-        从零开始的机器学习-第一周
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        
-突然想入门机器学习📖，把每周的内容记录到博客里，建立一个完整知识体系，也方便自己查阅。
-笔者只是个非计算机专业👨‍💻的菜鸟，有理解的不够全面的内容，欢迎佬们交流赐教😍
-笔者代码水平不高，大部分图片由draw.io绘制，如有错误，欢迎指正🥵
-
-
-本篇内容创作时间已经超过了标题的一周，着实大鸽子
- [1.1]📑引言(Foreword)
-毫无疑问，人工智能是目前计算机科学中最热门的一...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
-            <meta itemprop="name" content="sake">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-10-05T12:28:37+08:00">2022-10-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Tech/">Tech</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/686dc6ec.html' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/0.html">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="sake's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="sake's blog">
-    <meta itemprop="description" content="fullstack-sake's blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/0.html"  itemprop="url">
-        2022年10月4日
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-         MY FIRST BLOG
-Hello World
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
-            <meta itemprop="name" content="sake">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-10-04T23:47:25+08:00">2022-10-04</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/blog/0.html' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
+    
+      <br>
+      <div class="prev-next">
+        
+        <p class="current">
+          1 / 2
+        </p>
+        
+          <a class="next" rel="next" href="/page/2/">
+            <section class="post next white-box shadow floatable blur">
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
+        
+      </div>
     
   
 
@@ -3277,7 +3602,7 @@ Hello World
           <li><a class="flat-box"
             title="/categories/Tech/" href="/categories/Tech/"
             active-action="action-categoriesTech"
-            ><div class='name'>Tech</div><div class='badge'>(5)</div></a></li>
+            ><div class='name'>Tech</div><div class='badge'>(8)</div></a></li>
         
       </ul>
     </div>
@@ -3302,7 +3627,7 @@ Hello World
 
 
     <div class='content'>
-      <a href="/tags/AI/" style="font-size: 14px; color: #999">AI</a> <a href="/tags/DevOps/" style="font-size: 14px; color: #999">DevOps</a> <a href="/tags/SQLI/" style="font-size: 14px; color: #999">SQLI</a> <a href="/tags/Web/" style="font-size: 24px; color: #555">Web</a> <a href="/tags/XSS/" style="font-size: 14px; color: #999">XSS</a>
+      <a href="/tags/AI/" style="font-size: 14px; color: #999">AI</a> <a href="/tags/DevOps/" style="font-size: 14px; color: #999">DevOps</a> <a href="/tags/EIE/" style="font-size: 14px; color: #999">EIE</a> <a href="/tags/SQLI/" style="font-size: 14px; color: #999">SQLI</a> <a href="/tags/Web/" style="font-size: 24px; color: #555">Web</a> <a href="/tags/XSS/" style="font-size: 14px; color: #999">XSS</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/" style="font-size: 14px; color: #999">命令注入</a> <a href="/tags/%E7%9B%AE%E5%BD%95%E9%81%8D%E5%8E%86/" style="font-size: 14px; color: #999">目录遍历</a>
     </div>
   </section>
 
@@ -3822,7 +4147,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp"];
   let index = 0;
   let IntervalParallax = null;
 

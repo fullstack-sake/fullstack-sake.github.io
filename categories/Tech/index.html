@@ -2275,7 +2275,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669551017226),
+    lastupdate: new Date(1675501272944),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2701,9 +2701,266 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/9d23ab18.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/9d23ab18.html"  itemprop="url">
+        PortSwigger-OS command injection-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+
+
+OS命令注入（也称为shell注入）是一种web安全漏洞，允许攻击者在运行应用程序的服务器上执行任意操作系统（OS）命令，通常会完全破坏应用程序及其所有数据。通常，攻击者可以利用OS命令注入漏洞来危害托管基础设施的其他部分，利用信任关系将攻击转移到组织内的其他系统。
+
+ 简单案例1
+
+目标是获得...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-07T21:58:13+08:00">2023-01-07</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/9d23ab18.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/b7aad371.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/b7aad371.html"  itemprop="url">
+        PortSwigger-Directory traversal-Writeup
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        
+本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
+
+本文涉及Lab过于简单，篇幅较短
+
+
+目录遍历（也称为文件路径遍历）是一种网络安全漏洞，允许攻击者读取运行应用程序的服务器上的任意文件。  这可能包括应用程序代码和数据、后端系统的凭据以及敏感的操作系统文件。在某些情况下，攻击者可能能够写入服务器上的任意文件，从而允许他们修改应用程序数据或行为，并最...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-01-06T20:26:37+08:00">2023-01-06</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/b7aad371.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/487ba050.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="sake's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="sake's blog">
+    <meta itemprop="description" content="fullstack-sake's blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/487ba050.html"  itemprop="url">
+        《Signals-and-Systems》知识点
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+         🍮[第一章]-信号与系统概述
+
+ [1.1]信号的基本分类
+
+
+
+#
+信号类型1
+信号类型2
+备注
+
+
+
+
+1
+连续时间信号
+离散时间信号
+只看时间自变量离散还是连续的，其信号幅值可以是连续的也可以是离散的。
+
+
+2
+周期信号
+非周期信号
+f(t)=f(t+nT),n=0,1,2,3,…f(t)=f(t+nT),n=0,1,2,3,\dotsf(t)=f(t+nT),n=0,1,2,3,...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-12-22T14:22:00+08:00">2022-12-22</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/blog/487ba050.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2727,7 +2984,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/blog/38f57376.html"  itemprop="url">
-        PortSwigger靶场-XSS-Writeup
+        PortSwigger-XSS-Writeup
       </a>
     </h2>
   
@@ -2881,7 +3138,7 @@ convert.iconv.&lt;input-encoding>.&lt;...
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/blog/1d0df50e.html"  itemprop="url">
-        PortSwigger靶场-SQLI-Writeup
+        PortSwigger-SQLI-Writeup
       </a>
     </h2>
   
@@ -3202,7 +3459,7 @@ DevOps（Development和Operations的组合词）是一种重视“软件开发�
           <li><a class="flat-box"
             title="/categories/Tech/" href="/categories/Tech/"
             active-action="action-categoriesTech"
-            ><div class='name'>Tech</div><div class='badge'>(5)</div></a></li>
+            ><div class='name'>Tech</div><div class='badge'>(8)</div></a></li>
         
       </ul>
     </div>
@@ -3227,7 +3484,7 @@ DevOps（Development和Operations的组合词）是一种重视“软件开发�
 
 
     <div class='content'>
-      <a href="/tags/AI/" style="font-size: 14px; color: #999">AI</a> <a href="/tags/DevOps/" style="font-size: 14px; color: #999">DevOps</a> <a href="/tags/SQLI/" style="font-size: 14px; color: #999">SQLI</a> <a href="/tags/Web/" style="font-size: 24px; color: #555">Web</a> <a href="/tags/XSS/" style="font-size: 14px; color: #999">XSS</a>
+      <a href="/tags/AI/" style="font-size: 14px; color: #999">AI</a> <a href="/tags/DevOps/" style="font-size: 14px; color: #999">DevOps</a> <a href="/tags/EIE/" style="font-size: 14px; color: #999">EIE</a> <a href="/tags/SQLI/" style="font-size: 14px; color: #999">SQLI</a> <a href="/tags/Web/" style="font-size: 24px; color: #555">Web</a> <a href="/tags/XSS/" style="font-size: 14px; color: #999">XSS</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/" style="font-size: 14px; color: #999">命令注入</a> <a href="/tags/%E7%9B%AE%E5%BD%95%E9%81%8D%E5%8E%86/" style="font-size: 14px; color: #999">目录遍历</a>
     </div>
   </section>
 
@@ -3746,7 +4003,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp"];
   let index = 0;
   let IntervalParallax = null;
 

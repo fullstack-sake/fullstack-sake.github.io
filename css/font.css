@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "华文楷体";
+    src: url("华文楷体.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "华文行楷";
+    src: url("华文行楷.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }

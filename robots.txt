@@ -1,0 +1,8 @@
+User-agent: *
+
+Allow: /
+
+User-agent:*
+Disallow:
+
+Sitemap: https://sakee.cn/sitemap.xml

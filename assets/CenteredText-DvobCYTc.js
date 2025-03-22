@@ -1,0 +1,1 @@
+import{_ as t,o as n,c as a,f as o,n as r}from"./app-WuGmklff.js";const s={name:"CenteredText"};function d(e,c,l,f,_,i){return n(),a("div",{class:"centered-text",style:r({fontFamily:e.fontFamily})},[o(e.$slots,"default",{},void 0,!0)],4)}const m=t(s,[["render",d],["__scopeId","data-v-7d3b78c8"],["__file","CenteredText.vue"]]);export{m as default};

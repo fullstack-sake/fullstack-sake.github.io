@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SAKE&apos;s Field Notes</title>
+    <link>https://sakee.cn/</link>
+    <description>技术、系统、诗歌与随笔交错生长的个人博客</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 21 Sep 2026 07:30:00 GMT</lastBuildDate>
+    <atom:link href="https://sakee.cn/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ACL2022的一篇VLN综述解读</title>
+      <link>https://sakee.cn/posts/acl2022-vln-survey/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/acl2022-vln-survey/</guid>
+      <pubDate>Mon, 21 Sep 2026 07:30:00 GMT</pubDate>
+      <category>技术</category>
+      <category>具身智能</category>
+      <category>VLN</category>
+      <category>视觉语言导航</category>
+      <category>多模态</category>
+      <category>综述</category>
+      <description>从一篇 ACL 2022 的 VLN 综述出发，把视觉语言导航的四个核心难点讲清楚：多模态软对齐、序列决策、误差累积与记忆机制，并梳理任务分类、评价指标与四类方法的对应关系，最后留一份初学者的人话版词典。</description>
+    </item>
+    <item>
+      <title>具身智能学习-LLM基础</title>
+      <link>https://sakee.cn/posts/embodied-ai-llm-transformer-autoregressive/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/embodied-ai-llm-transformer-autoregressive/</guid>
+      <pubDate>Sun, 19 Jul 2026 10:17:53 GMT</pubDate>
+      <category>技术</category>
+      <category>LLM</category>
+      <category>具身智能</category>
+      <category>Transformer</category>
+      <category>自回归生成</category>
+      <category>KV Cache</category>
+      <description>具身智能如何让LLM操控机器人？本文解析VLA模型如何将动作序列化为Token，让LLM从“聊天大脑”变身“决策引擎”，详解自回归生成、KV缓存等核心原理，助你理解下一代机器人的语言控制基础。</description>
+    </item>
+    <item>
+      <title>具身智能学习：Transformer</title>
+      <link>https://sakee.cn/posts/embodied-intelligence-transformer-learning/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/embodied-intelligence-transformer-learning/</guid>
+      <pubDate>Tue, 07 Jul 2026 08:24:28 GMT</pubDate>
+      <category>技术</category>
+      <category>Transformer</category>
+      <category>具身智能</category>
+      <category>注意力机制</category>
+      <category>机器人</category>
+      <category>AI</category>
+      <description>从具身智能的视角拆解 Transformer：为什么多模态信息需要一个统一的路由机制、一个 Block 内部由哪些组件组成、位置编码与注意力各自解决什么问题，以及这套结构如何连接到视觉、语言和动作的共同建模。</description>
+    </item>
+    <item>
+      <title>具身智能学习：强化学习与控制</title>
+      <link>https://sakee.cn/posts/embodied-intelligence-rl-control/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/embodied-intelligence-rl-control/</guid>
+      <pubDate>Fri, 03 Jul 2026 08:40:54 GMT</pubDate>
+      <category>技术</category>
+      <category>具身智能</category>
+      <category>强化学习</category>
+      <category>策略梯度</category>
+      <category>PPO</category>
+      <category>SAC</category>
+      <category>模仿学习</category>
+      <description>深入理解策略梯度、Actor-Critic、PPO、SAC 等核心 RL 算法的设计哲学与工程实践，从方差-偏差权衡的角度梳理算法演进脉络，为具身智能中的算法选型建立系统的思维框架。</description>
+    </item>
+    <item>
+      <title>具身智能学习：强化学习基础</title>
+      <link>https://sakee.cn/posts/embodied-intelligence-rl-basics/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/embodied-intelligence-rl-basics/</guid>
+      <pubDate>Tue, 30 Jun 2026 07:07:14 GMT</pubDate>
+      <category>技术</category>
+      <category>具身智能</category>
+      <category>强化学习</category>
+      <category>MDP</category>
+      <category>动态规划</category>
+      <category>控制</category>
+      <description>想入门具身智能却卡在强化学习？本文从零详解MDP、动态规划等强化学习核心概念，结合机器人控制场景拆解状态价值与策略迭代，帮你建立从理论到具身应用的直觉，为后续掌握DQN、PPO打下坚实基础。</description>
+    </item>
+    <item>
+      <title>精神分析入门笔记：倾听、共情，和那些我没想明白的事</title>
+      <link>https://sakee.cn/posts/basics-of-psychoanalytic-listening/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/basics-of-psychoanalytic-listening/</guid>
+      <pubDate>Sun, 14 Jun 2026 10:02:34 GMT</pubDate>
+      <category>心理学</category>
+      <category>精神分析</category>
+      <category>倾听</category>
+      <category>共情</category>
+      <category>心理咨询</category>
+      <category>无意识</category>
+      <description>想真正理解一个人，而不是只停留在安慰和建议？精神分析教会我的第一课，恰恰是“忍住别说话”。本文从“为什么AI聊天比真人更治愈”的困惑出发，拆解倾听、共情和回应背后的深层逻辑，带你跳出“解决问题”的思维惯性，重新学习如何听懂那些没说出口的话。</description>
+    </item>
+    <item>
+      <title>《江城子 · 别乡》</title>
+      <link>https://sakee.cn/shicigefu/jiangchengzi-farewell-hometown/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/jiangchengzi-farewell-hometown/</guid>
+      <pubDate>Thu, 13 Feb 2025 05:29:40 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>诗词</category>
+      <category>离别</category>
+      <category>乡愁</category>
+      <category>羁旅</category>
+      <category>人生</category>
+      <description>十年漂泊，鬓角已霜，乡愁却无处安放。这首《江城子·别乡》不仅是一阙现代词，更道出了无数异乡人在汽笛声中的苍茫与孤独。从“碾寒光，碎河梁”的离别瞬间，到“何处是吾乡”的灵魂拷问，一起来品味字句间的羁旅人生与情感共鸣。</description>
+    </item>
+    <item>
+      <title>DeepSeek-R1 技术解析（下）</title>
+      <link>https://sakee.cn/posts/deepseek-r1-part2/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/deepseek-r1-part2/</guid>
+      <pubDate>Sat, 01 Feb 2025 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>DeepSeek R1</category>
+      <category>强化学习</category>
+      <category>推理</category>
+      <category>奖励驱动</category>
+      <category>过程监督</category>
+      <description>DeepSeek-R1凭什么仅用最终答案的奖励就能激发出强大的数学推理能力？本文深入解读其“只看结果”的强化学习策略，揭秘“Aha Moment”顿悟现象背后的GRPO机制，并探讨奖励驱动能否彻底替代传统的过程监督，为理解大模型的推理涌现提供新视角。</description>
+    </item>
+    <item>
+      <title>DeepSeek-R1 技术解析（上）</title>
+      <link>https://sakee.cn/posts/deepseek-r1-part1/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/deepseek-r1-part1/</guid>
+      <pubDate>Tue, 28 Jan 2025 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>R1</category>
+      <category>强化学习</category>
+      <category>蒸馏</category>
+      <description>DeepSeek-R1凭什么用不到OpenAI十分之一的成本打平o1？本文拆解GRPO算法和蒸馏管线背后的技术逻辑，揭秘纯强化学习如何激发模型自主推理能力，以及为何从Zero到产品化版本，蒸馏比直接训练更有效。</description>
+    </item>
+    <item>
+      <title>《冬雪之下》备团记录</title>
+      <link>https://sakee.cn/posts/dongxuezhixia-prep/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/dongxuezhixia-prep/</guid>
+      <pubDate>Tue, 28 Jan 2025 16:00:00 GMT</pubDate>
+      <category>跑团</category>
+      <category>跑团</category>
+      <category>克苏鲁</category>
+      <category>TRPG</category>
+      <category>模组</category>
+      <category>冬雪之下</category>
+      <description>想带朋友跑《冬雪之下》却不知如何下手？这里有份超详细的万字备团记录，囊括了时间线梳理、地点事件、NPC台词甚至法术速查。帮你快速掌握这个克苏鲁模组的核心诡计与氛围营造，无论是新手KP还是想优化流程的老手，都能直接开团。</description>
+    </item>
+    <item>
+      <title>使用Agent实现仪器仪表的自动测试</title>
+      <link>https://sakee.cn/posts/instruagent/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/instruagent/</guid>
+      <pubDate>Tue, 21 Jan 2025 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>Agent</category>
+      <category>LLM</category>
+      <category>自动测试</category>
+      <category>仪器仪表</category>
+      <category>电子工程</category>
+      <description>想摆脱重复的仪器测试手工作业？本文手把手带你用LLM Agent实现自动化，从GPIB/SCPI指令解析到ReAct任务规划，让AI帮你操作示波器、信号源，解放双手专注设计。附开源项目InstruAgent核心代码解读与避坑指南。</description>
+    </item>
+    <item>
+      <title>《献钟与芽》</title>
+      <link>https://sakee.cn/shicigefu/clock-sprout-metal-poem/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/clock-sprout-metal-poem/</guid>
+      <pubDate>Tue, 03 Dec 2024 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>现代诗</category>
+      <category>时间</category>
+      <category>新生</category>
+      <category>意象</category>
+      <category>诗歌</category>
+      <description>献钟与芽》是一首探讨时间、新生与自我重塑的意象派现代诗。诗中“献钟”象征被规训、被量化的人生，“芽”则代表冲破桎梏的内在生命力。作者以“金属熔成铁水”、“绿芽顶开颅骨”等极具张力的意象，展现了个体在机械时间与自然生命力的撕扯中，如何最终引爆一场“青铜的轰鸣”。适合对哲学、诗歌意象与精神分析感兴趣的读者。</description>
+    </item>
+    <item>
+      <title>《相见欢 · 岁杪归思》</title>
+      <link>https://sakee.cn/shicigefu/winter-night-homesickness/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/winter-night-homesickness/</guid>
+      <pubDate>Tue, 22 Oct 2024 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>词</category>
+      <category>思乡</category>
+      <category>岁末</category>
+      <category>归思</category>
+      <category>相见欢</category>
+      <description>岁末寒冬，归思难抑？这首《相见欢》借寒梅、孤灯、碎冰、长夜，道尽了游子岁杪的寂寥与归心。解析古典诗词中的意象密码与情感寄托，探寻“星槎渡江”背后的深层乡愁，为漂泊的灵魂提供一片精神栖居地。</description>
+    </item>
+    <item>
+      <title>综述：移动机器人路径规划技术回顾与展望</title>
+      <link>https://sakee.cn/posts/mobile-robot-path-planning-survey/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/mobile-robot-path-planning-survey/</guid>
+      <pubDate>Sun, 13 Oct 2024 16:00:00 GMT</pubDate>
+      <category>文献阅读</category>
+      <category>路径规划</category>
+      <category>移动机器人</category>
+      <category>文献综述</category>
+      <category>环境建模</category>
+      <category>算法</category>
+      <description>从经典图搜索到前沿强化学习，一文梳理移动机器人路径规划的技术演进与核心算法对比。本文深入解析全局/局部规划差异、环境建模技巧及仿生/智能算法实战，助你快速构建路径规划知识体系并应用于实际机器人项目。</description>
+    </item>
+    <item>
+      <title>《虞美人 · 寒窗寄怀》</title>
+      <link>https://sakee.cn/shicigefu/yu-mei-ren-han-chuang-ji-huai/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/yu-mei-ren-han-chuang-ji-huai/</guid>
+      <pubDate>Sun, 13 Oct 2024 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>虞美人</category>
+      <category>词</category>
+      <category>寒窗</category>
+      <category>寄怀</category>
+      <description>一个安全工程师的深夜独白：当古典诗词遇上代码人生。在寒窗与键盘之间，如何借星火春色，破解现实迷津？这首《虞美人》里，藏着一个技术人对「未成章」的焦虑与「破迷津」的希冀。</description>
+    </item>
+    <item>
+      <title>《一剪梅 · 暮蛩声咽旧苑楼》</title>
+      <link>https://sakee.cn/shicigefu/evening-cicada-old-pavilion-autumn-thoughts/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/evening-cicada-old-pavilion-autumn-thoughts/</guid>
+      <pubDate>Sat, 28 Sep 2024 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>诗词</category>
+      <category>一剪梅</category>
+      <category>秋思</category>
+      <category>羁旅</category>
+      <description>暮蛩声中，如何用古词写尽现代人的漂泊与乡愁？这首《一剪梅》以旧苑秋声为引，将苔痕、残照、客舟、孤雁织成羁旅图景，深度解析“墨字沉浮，眉字沉浮”里的欲言又止。不仅是古典诗词赏析，更带你感受技术人灵魂深处的诗意栖居与永恒乡思。</description>
+    </item>
+    <item>
+      <title>记九月二十二夜梦</title>
+      <link>https://sakee.cn/suibi/dream-prison-nightmare/</link>
+      <guid isPermaLink="true">https://sakee.cn/suibi/dream-prison-nightmare/</guid>
+      <pubDate>Thu, 26 Sep 2024 16:00:00 GMT</pubDate>
+      <category>随笔</category>
+      <category>梦</category>
+      <category>悬疑</category>
+      <category>恐怖</category>
+      <category>死亡</category>
+      <category>故事</category>
+      <description>酒哥为什么一听闹钟就崩溃？那个九月二十二夜的梦境里，究竟藏着怎样一场关于死亡与轮回的恐怖游戏？跟随这段融合悬疑、惊悚与哲学思辨的深夜奇谈，在虚实交织的叙事中，体验一次对“真实”与“存在”的脊背发凉的精神叩问。</description>
+    </item>
+    <item>
+      <title>《献雨与刀》</title>
+      <link>https://sakee.cn/shicigefu/rain-and-knife/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/rain-and-knife/</guid>
+      <pubDate>Wed, 25 Sep 2024 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>雨</category>
+      <category>刀</category>
+      <category>自由</category>
+      <category>救赎</category>
+      <category>现代诗</category>
+      <description>雨能重返天空，刀能斩断什么？一首关于自由与救赎的现代诗，探讨我们如何在生活的“碰壁”与虚幻的“水流”中挣扎，最终发现救赎常藏于间接之中——不是拥有，而是成为。献给每一个在暴雨中冲浪、在月光下磨砺灵魂的你。</description>
+    </item>
+    <item>
+      <title>《一剪梅 · 感雨打蓝花丹》</title>
+      <link>https://sakee.cn/shicigefu/rain-on-blue-flowers-autumn-melancholy/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/rain-on-blue-flowers-autumn-melancholy/</guid>
+      <pubDate>Sat, 14 Sep 2024 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>词</category>
+      <category>一剪梅</category>
+      <category>蓝花丹</category>
+      <category>感怀</category>
+      <category>秋日</category>
+      <description>雨打蓝花丹，何以人花共萧条？一首《一剪梅》道尽秋日感怀，在烦嚣意绪与扶摇狂梦之间，探寻现代人心灵深处的古典回响。当寒潮冷却人潮，且看如何以词笔安放这份喧嚣中的孤寂。</description>
+    </item>
+    <item>
+      <title>基于ADS的硅锗低噪声放大器设计与优化</title>
+      <link>https://sakee.cn/posts/lna-design-ads/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/lna-design-ads/</guid>
+      <pubDate>Fri, 14 Jun 2024 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>低噪声放大器</category>
+      <category>RF</category>
+      <category>SiGe</category>
+      <category>ADS</category>
+      <category>LNA</category>
+      <description>如何在1.8GHz实现0.8dB超低噪声？本文基于NXP硅锗HBT，手把手带你走完从器件建模、稳定性分析到噪声匹配的完整ADS射频设计流程，最终实现19dB增益与超低噪声系数的LNA，附稳定性判据与协同仿真避坑要点。</description>
+    </item>
+    <item>
+      <title>ComfyUI入门学习之基础工作流</title>
+      <link>https://sakee.cn/posts/comfyui-intro-workflow/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/comfyui-intro-workflow/</guid>
+      <pubDate>Wed, 24 Jan 2024 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>ComfyUI</category>
+      <category>Stable Diffusion</category>
+      <category>Workflow</category>
+      <category>节点流程</category>
+      <category>AI绘画</category>
+      <description>想玩转ComfyUI却卡在节点连线？这份新手避坑指南带你从零搭建Stable Diffusion工作流，搞懂VAE解码、CLIP层和LoRA加载的核心逻辑，手把手教你参数化节点和批量生图，告别玄学调参实现精准控图。</description>
+    </item>
+    <item>
+      <title>WSL2 Docker释放磁盘空间</title>
+      <link>https://sakee.cn/posts/wsl2-docker-disk-space/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/wsl2-docker-disk-space/</guid>
+      <pubDate>Fri, 19 Jan 2024 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>杂谈</category>
+      <category>WSL2</category>
+      <category>Docker</category>
+      <category>磁盘清理</category>
+      <category>diskpart</category>
+      <category>磁盘空间</category>
+      <description>WSL2磁盘空间越用越大？Docker日志和缓存占满vhd镜像却不会自动释放。本文手把手教你用diskpart压缩虚拟磁盘，结合WSL2内部清理命令，三步将占用从88G降到56G，彻底解决Windows下开发环境存储焦虑。</description>
+    </item>
+    <item>
+      <title>《数字信号处理》自用一周速通</title>
+      <link>https://sakee.cn/posts/dsp-quick-review/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/dsp-quick-review/</guid>
+      <pubDate>Wed, 20 Dec 2023 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>数字信号处理</category>
+      <category>DSP</category>
+      <category>傅里叶变换</category>
+      <category>Z变换</category>
+      <category>滤波器</category>
+      <description>还剩一周DSP考试怎么自救？这篇速通指南帮你搞定傅里叶变换、Z变换和数字滤波器设计核心考点，用最口语化的笔记和例题拆解，带你高效冲刺、稳住不挂科。</description>
+    </item>
+    <item>
+      <title>基于STM32F746的实时鸟种识别</title>
+      <link>https://sakee.cn/posts/stm32f746-bird-recognition/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/stm32f746-bird-recognition/</guid>
+      <pubDate>Wed, 06 Dec 2023 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>STM32F746</category>
+      <category>嵌入式AI</category>
+      <category>声音分类</category>
+      <category>鸟种识别</category>
+      <category>神经网络</category>
+      <description>想在单片机上跑神经网络做实时鸟种识别？这篇基于STM32F746的嵌入式AI实战，从51GB原始鸟声数据清洗、CNN模型训练到93.3%准确率的模型轻量化部署，手把手带你实现离线环境下的鸟类声音分类，解锁生态监测与硬件AI结合的落地场景。</description>
+    </item>
+    <item>
+      <title>XiaoMi 4C刷入OpenWrt踩坑</title>
+      <link>https://sakee.cn/posts/xiaomi-4c-openwrt/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/xiaomi-4c-openwrt/</guid>
+      <pubDate>Sun, 02 Jul 2023 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>OpenWrt</category>
+      <category>路由器刷机</category>
+      <category>嵌入式</category>
+      <category>漏洞利用</category>
+      <category>Breed</category>
+      <description>手把手教你白嫖的小米4C路由器刷OpenWrt，从漏洞提权、备份分区到绕过Breed刷机限制全流程详解。本文重点解决固件写入地址偏移导致无限重启的坑，附详细操作命令和避坑指南，让你轻松拥有高性能软路由。</description>
+    </item>
+    <item>
+      <title>初探ChatBot开发</title>
+      <link>https://sakee.cn/posts/chatbot-dev-intro/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/chatbot-dev-intro/</guid>
+      <pubDate>Tue, 16 May 2023 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>ChatBot</category>
+      <category>GPT2</category>
+      <category>情感计算</category>
+      <category>NLP</category>
+      <category>机器学习</category>
+      <description>想用GPT2训练一个能说抽象话的赛博群友？本文记录了从清洗真实群聊语料到模型训练调试的全过程，附情感计算代码帮你分析聊天情绪，手把手教你打造个人专属的抽象派聊天机器人。</description>
+    </item>
+    <item>
+      <title>记一次严重SRC：破解麦当劳 sign 参数加密逻辑</title>
+      <link>https://sakee.cn/posts/mcdonald-sign-crack/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/mcdonald-sign-crack/</guid>
+      <pubDate>Fri, 10 Feb 2023 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>逆向工程</category>
+      <category>签名算法</category>
+      <category>JavaScript逆向</category>
+      <category>加密破解</category>
+      <category>SRC</category>
+      <description>从JS混淆到sign参数破解，手把手逆向麦当劳优惠券领取接口的签名算法。本文详细记录了如何定位加密函数、还原混淆逻辑，并最终成功绕过sign验证，附可复现的完整流程和SRC挖掘思路。</description>
+    </item>
+    <item>
+      <title>PortSwigger-Writeup</title>
+      <link>https://sakee.cn/posts/portswigger-writeup/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/portswigger-writeup/</guid>
+      <pubDate>Tue, 08 Nov 2022 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>SQL注入</category>
+      <category>XSS</category>
+      <category>SSTI</category>
+      <category>命令注入</category>
+      <category>网络安全</category>
+      <description>PortSwigger官方靶场Writeup精华汇总，涵盖SQL注入、XSS、SSTI、命令注入等核心漏洞实战解析。从万能密码绕过登录到UNION攻击确定列数，手把手带你告别“sqlmap一把梭”，掌握手注与自动化结合的完整漏洞挖掘思路。适合安全新手入门和从业者查漏补缺，附详细payload和避坑指南。</description>
+    </item>
+    <item>
+      <title>攻防世界Web-难度1-Writeup</title>
+      <link>https://sakee.cn/posts/gf-world-web-level1/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/gf-world-web-level1/</guid>
+      <pubDate>Tue, 11 Oct 2022 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>CTF</category>
+      <category>Web</category>
+      <category>文件包含</category>
+      <category>文件上传</category>
+      <category>SQL注入</category>
+      <description>想入门CTF Web手却没方向？本文汇总了攻防世界Web入门难度的完整Writeup，覆盖文件包含、文件上传、SQL注入等高频考点，包含php伪协议绕过、.user.ini利用、序列化漏洞等实战技巧拆解，帮你快速建立解题思路，拿下基础分数。</description>
+    </item>
+    <item>
+      <title>从零开始的机器学习-第一周</title>
+      <link>https://sakee.cn/posts/machine-learning-from-scratch-week1/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/machine-learning-from-scratch-week1/</guid>
+      <pubDate>Tue, 04 Oct 2022 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>机器学习</category>
+      <category>监督学习</category>
+      <category>无监督学习</category>
+      <category>线性回归</category>
+      <category>分类</category>
+      <description>从零开始学机器学习，第一周都该学什么？本文详解监督学习与无监督学习的核心区别，用股票涨跌预测等例子帮你分清回归与分类，并手把手引入单变量线性回归模型，为菜鸟新手建立清晰的ML第一课知识框架。</description>
+    </item>
+    <item>
+      <title>《如梦令 · 暮春题梦》</title>
+      <link>https://sakee.cn/shicigefu/dreamlike-song-spring-night-dream/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/dreamlike-song-spring-night-dream/</guid>
+      <pubDate>Tue, 12 Apr 2022 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>如梦令</category>
+      <category>暮春</category>
+      <category>春梦</category>
+      <category>杜鹃</category>
+      <category>词</category>
+      <description>春夜微醺与谁同游芳苑？一首《如梦令》写尽暮春幻梦与惊醒后的怅然若失。从古典意象「杜鹃魂断」的解读，到现代人如何处理内心深处的失落与执念，在词韵中寻找情感的共鸣与释放。</description>
+    </item>
+    <item>
+      <title>《相思难》</title>
+      <link>https://sakee.cn/shicigefu/longing-and-sorrow/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/longing-and-sorrow/</guid>
+      <pubDate>Tue, 01 Feb 2022 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>相思</category>
+      <category>词</category>
+      <category>情感</category>
+      <category>古诗词</category>
+      <category>离别</category>
+      <description>暮霭沉沉，星海漫漫，如何用一杯酒浇透这无边的思念？分享一首原创词作《相思难》，解析离别之痛与相思之苦如何在古典意象中层层递进，或许能让你在深夜找到一丝共鸣与慰藉。</description>
+    </item>
+    <item>
+      <title>《献夜与火》</title>
+      <link>https://sakee.cn/shicigefu/night-and-fire-poem/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/night-and-fire-poem/</guid>
+      <pubDate>Fri, 03 Dec 2021 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>诗歌</category>
+      <category>现代诗</category>
+      <category>夜</category>
+      <category>火</category>
+      <category>爱</category>
+      <description>夜是愚钝的黑，火是燃烧的爱。这首现代诗将你带入一个矛盾而炽热的内心世界，探讨爱与自我、毁灭与重生的纠葛。从夜星的致命到篝火的温暖，最终在眼疾的隐喻中找到灵魂的解药。献给所有在黑暗中寻找光亮的人。</description>
+    </item>
+    <item>
+      <title>《银杏赋》</title>
+      <link>https://sakee.cn/shicigefu/ginkgo-poem/</link>
+      <guid isPermaLink="true">https://sakee.cn/shicigefu/ginkgo-poem/</guid>
+      <pubDate>Thu, 11 Nov 2021 16:00:00 GMT</pubDate>
+      <category>诗词歌赋</category>
+      <category>银杏</category>
+      <category>赋</category>
+      <category>诗词</category>
+      <category>自然</category>
+      <category>秋景</category>
+      <description>银杏不负秋，人间如画来。这篇《银杏赋》带你领略从秋入冬时，银杏如何将碧空白云染成金黄的诗意画卷，探索古典诗词如何捕捉自然之美，唤醒我们对季节流转的细腻感知。</description>
+    </item>
+    <item>
+      <title>在成都的第一场雨</title>
+      <link>https://sakee.cn/suibi/first-rain-in-chengdu/</link>
+      <guid isPermaLink="true">https://sakee.cn/suibi/first-rain-in-chengdu/</guid>
+      <pubDate>Fri, 17 Sep 2021 16:00:00 GMT</pubDate>
+      <category>随笔</category>
+      <category>成都</category>
+      <category>雨</category>
+      <category>大学生活</category>
+      <category>日常</category>
+      <category>感悟</category>
+      <category>说说</category>
+      <description>在成都的第一场雨，从早六的闹钟到晚自习后的银杏大道，记录一个普通大学生兵荒马乱又充满慰藉的潮湿一天。这里有抢不到车的食堂帘外、冒雨奔跑的现代卓别林、家人问候的瞬间感动，献给所有在陌生城市里，用生涩的心探索新世界的你。</description>
+    </item>
+    <item>
+      <title>写给自己</title>
+      <link>https://sakee.cn/suibi/self-advice-personal-growth/</link>
+      <guid isPermaLink="true">https://sakee.cn/suibi/self-advice-personal-growth/</guid>
+      <pubDate>Tue, 31 Aug 2021 16:00:00 GMT</pubDate>
+      <category>随笔</category>
+      <category>自我成长</category>
+      <category>心理健康</category>
+      <category>边界</category>
+      <category>独处</category>
+      <category>真实自我</category>
+      <description>停止怀疑自己，其实每个面具都是你的一部分。本文分享从建立边界、善用独处到降低责任感的具体方法，帮你告别情绪内耗、找回真实自我，学会用攒钱买自由，体验做自己的爽感。</description>
+    </item>
+    <item>
+      <title>MY FIRST BLOG</title>
+      <link>https://sakee.cn/posts/my-first-blog/</link>
+      <guid isPermaLink="true">https://sakee.cn/posts/my-first-blog/</guid>
+      <pubDate>Sat, 31 Dec 2016 16:00:00 GMT</pubDate>
+      <category>技术</category>
+      <category>博客</category>
+      <category>入门</category>
+      <category>HelloWorld</category>
+      <description>从0到1搭建个人技术博客的保姆级攻略！分享作为安全工程师如何选择技术栈、配置域名、部署上线，以及如何写出第一篇有网感的「Hello World」，帮你迈出技术写作的第一步。</description>
+    </item>
+  </channel>
+</rss>
